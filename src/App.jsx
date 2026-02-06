@@ -1,13 +1,12 @@
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 
 
   return (
     <>
-      <h1 className="text-center font-bold text-2xl">
-        ScaleBI Project
-      </h1>
+      <Navbar />
 
     </>
   )
