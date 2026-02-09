@@ -88,12 +88,12 @@ export default function Hero() {
 
 
         <div className="mt-12 w-full flex justify-center px-4 sm:px-6">
-          <div className=" w-full max-w-[1280px] bg-white rounded-[30px] overflow-visible sm:overflow-hidden"
+          <div className=" w-full max-w-[1440px] bg-white rounded-[34px] overflow-visible sm:overflow-hidden"
           >
             <img
               src={heroDashboard}
               alt="ScaleBI Dashboard"
-              className="w-full h-auto max-h-[280px] sm:max-h-[600px] lg:max-h-[785px] object-contain sm:object-cover rounded-[8px] mx-auto"
+              className="w-full h-auto max-h-[280px] sm:max-h-none lg:h-auto object-contain sm:object-contain rounded-[8px] mx-auto"
             />
           </div>
         </div>
