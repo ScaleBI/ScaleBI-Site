@@ -1,44 +1,7 @@
-import TickIcon from '../assets/icons/tick-icon.svg';
-import {
-  DollarSign,
-  Monitor,
-  Settings,
-  Boxes,
-  HeartHandshake,
-} from "lucide-react";
+import TickIcon from '../assets/icons/tick-icon.svg'; 
 
 
 export default function Comparison(){
-
-    const rows = [
-    {
-      icon: <DollarSign size={22} />,
-      pain: "Expensive per-user licenses",
-      solution:
-        "One-time setup + optional flat monthly support + unlimited users",
-    },
-    {
-      icon: <Monitor size={22} />,
-      pain: "Vendor-hosted SaaS",
-      solution: "Deployed inside your own infrastructure",
-    },
-    {
-      icon: <Settings size={22} />,
-      pain: "Limited control or extensibility",
-      solution: "100% open-source + customizable stack",
-    },
-    {
-      icon: <Boxes size={22} />,
-      pain: "Locked ecosystems",
-      solution: "Integrates with any warehouse or data tool",
-    },
-    {
-      icon: <HeartHandshake size={22} />,
-      pain: "Slow support or rigid SLAs",
-      solution: "Dedicated, 24x7 Engineering-Led Managed Service",
-    },
-  ];
-  
     return(
         <section className="w-full bg-[#504DFF] flex justify-center">
             <div className="max-w-[1440px] flex flex-col items-center gap-[64px] p-[80px]">
@@ -55,7 +18,6 @@ export default function Comparison(){
                 </div>
 
                 <div>
-
                     
 
                 </div>
