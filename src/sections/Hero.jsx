@@ -9,12 +9,12 @@ import StarIcon from "../assets/icons/star-icon.svg";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] flex justify-center py-16">
-      <div className="w-full max-w-[1440px] flex flex-col items-center">
+    <section className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] flex justify-center ">
+      <div className="w-full max-w-[1440px] flex flex-col items-center py-12 sm:py-16 px-4 sm:px-8 lg:px-20">
         <div className="w-full max-w-[1280px] px-6 lg:px-[80px] flex flex-col items-center gap-[32px]">
           <div className="w-full max-w-[1120px] flex flex-col items-center text-center gap-[24px]">
 
-            <h1 className="font-urbanist font-semibold text-[36px] sm:text-[48px] lg:text-[80px] leading-[44px] sm:leading-[56px] lg:leading-[88px] text-[#001066]">
+            <h1 className="font-urbanist font-semibold text-[32px] sm:text-[48px] lg:text-[80px] leading-[40px] sm:leading-[56px] lg:leading-[88px] text-[#001066]">
               Take Control of Your <br /> <span className="text-[#504DFF]">Business Intelligence</span>
             </h1>
             <p className="max-w-[1000px] text-[#5C5F70] text-[15px] sm:text-[16px] lg:text-[20px] font-urbanist leading-[26px] sm:leading-[28px]">
@@ -87,7 +87,7 @@ export default function Hero() {
 
 
 
-        <div className="mt-12 w-full flex justify-center px-4 sm:px-6">
+        <div className="mt-12 w-full flex justify-center">
           <div className=" w-full max-w-[1440px] bg-white rounded-[34px] overflow-visible sm:overflow-hidden"
           >
             <img

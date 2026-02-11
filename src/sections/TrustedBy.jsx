@@ -5,7 +5,7 @@ export default function TrustedBy() {
 
   return (
     <section className="bg-[#000419] py-12 sm:py-16 lg:py-20">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 text-center">
+      <div className="max-w-[1280px] mx-auto  text-center">
 
         {/* Title */}
         <h2 className="font-urbanist text-[20px] sm:text-[28px] lg:text-[32px] text-[#99A9FF]">
