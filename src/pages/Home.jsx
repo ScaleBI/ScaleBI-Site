@@ -4,6 +4,7 @@ import Problem from "../sections/Problem";
 import Solution from "../sections/Solution";
 import Comparison from "../sections/Comparison";
 import Steps from "../sections/Steps";
+import Integration from "../sections/Integration";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Solution/>
       <Comparison/>
       <Steps/>
+      <Integration/>
 
     </>
   );
