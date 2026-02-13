@@ -27,7 +27,7 @@ export default function Solution() {
     return (
         <section className="w-full bg-[#FFFFFF] flex justify-center">
             <div className=" w-full max-w-[1440px] flex flex-col items-center p-[40px] sm:p-[80px] gap-[32px] sm:gap-[64px] px-[16px] sm:px-[80px]">
-                
+
                 {/* Header */}
                 <div className="max-w-[1280px] flex flex-col items-center gap-[16px] sm:gap-[24px]">
                     <div className="inline-flex gap-[8px] px-[12px] py-[6px] sm:py-[8px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] rounded-[12px] text-sm sm:text-base">
@@ -49,10 +49,10 @@ export default function Solution() {
                 <div className="w-full flex flex-col sm:flex-row sm:gap-[16px] gap-[16px] items-center justify-center">
                     {solutions.map((item, index) => (
                         <div key={index} className="w-full sm:max-w-[416px] flex flex-col gap-[16px] sm:gap-[24px] rounded-[16px] border border-[#E0E5FF] p-[24px] sm:p-[32px] items-center bg-[#FAFBFF]">
-                            
-                            <div className="border-2 border-[#E0E5FF] p-[2px] rounded-[32px]">
+
+                             <div className="border-2 border-[#E0E5FF] p-[2px] rounded-[32px]">
                                 <div className="border-2 border-[#99A9FF] p-[2px] rounded-[32px]">
-                                    <div className="flex gap-[8px] bg-[#504DFF] rounded-[32px] px-[8px] py-[12px] sm:py-[16px] items-center justify-center min-w-[120px] sm:min-w-[133px]">
+                            <div className="flex items-center gap-2 px-3 py-1.5 text-xs md:px-4 md:py-2 md:text-sm lg:px-6 lg:py-3 lg:text-base bg-[#504DFF] rounded-[32px] text-white font-medium">
                                         <img src={item.icon} alt={`${item.title}-icon`} />
                                         <span className="font-urbanist font-semibold text-[20px] sm:text-[24px] text-[#FFFFFF]">{item.title}</span>
                                     </div>

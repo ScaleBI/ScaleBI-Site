@@ -71,11 +71,20 @@ export default function Hero() {
           </div>
 
           <button
-            className="flex items-center gap-3 px-4 py-2 sm:px-6 sm:py-3 bg-[#504DFF] text-white font-medium text-sm sm:text-base rounded-lg hover:bg-[#7F7CFF] transition-colors"
+            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] bg-[#504DFF] text-white font-medium text-sm rounded-lg hover:bg-[#7F7CFF] transition-colors"
           >
             BOOK YOUR FREE BI CONSULTATION
-            <img src={ArrowIcon} alt="arrow" className="w-4 h-4 sm:w-5 sm:h-5 bg-white rounded" />
+
+            {/* Icon box */}
+            <span className="w-[32px] h-[32px] bg-white rounded-lg flex items-center justify-center">
+              <img
+                src={ArrowIcon}
+                alt="arrow"
+                className="w-[17px] h-[17px]"
+              />
+            </span>
           </button>
+
 
 
           <p className="flex items-center gap-2 text-center font-jetbrains text-[#001066]">

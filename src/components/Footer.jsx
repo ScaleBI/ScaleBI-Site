@@ -45,7 +45,7 @@ export default function Footer() {
                 <img
                     src={DashBoardImage}
                     alt="dashboard"
-                    className="hidden lg:block absolute right-0 top-[80px] w-[640px] h-[455px] "
+                    className="hidden lg:block absolute right-0 top-[80px] w-[560px] h-[455px] "
                 />
 
             </div>
@@ -61,10 +61,10 @@ export default function Footer() {
 
                         <div className="bg-white py-2 px-6 rounded-xl hidden md:block">
                             <ul className="flex items-center gap-[16px] py-1 px-4 font-jetbrains uppercase text-[#5C5F70] text-[14px] lg:text-[16px]">
-                                <li>Home</li>
-                                <li>Why Us</li>
-                                <li>Success Stories</li>
-                                <li>Contact Us</li>
+                                <li className="px-4">Home</li>
+                                <li className="px-4">Why Us</li>
+                                <li className="px-4">Success Stories</li>
+                                <li className="px-4">Contact Us</li>
                             </ul>
                         </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
                     <div className="w-full h-[2px] bg-[#2E3038] rounded-[8px]"></div>
 
                     <p className="text-center text-white font-urbanist font-medium text-[14px] sm:text-[16px] lg:text-[18px]">
-                        © {new Date().getFullYear()} ScaleBI is a trademark of its respective owners.
+                        &copy;  2025 ScaleBI is a trademark of its respective owners.
                     </p>
 
                 </div>

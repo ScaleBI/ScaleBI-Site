@@ -25,9 +25,9 @@ export default function Navbar() {
 
                     {/* Menu */}
                     <ul className="hidden md:flex items-center gap-8 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
-                        <li className="hover:text-[#504DFF] cursor-pointer">Home</li>
-                        <li className="hover:text-[#504DFF] cursor-pointer">Why Us</li>
-                        <li className="hover:text-[#504DFF] cursor-pointer">Success Stories</li>
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4">Home</li>
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4">Why Us</li>
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4">Success Stories</li>
                     </ul>
 
 
