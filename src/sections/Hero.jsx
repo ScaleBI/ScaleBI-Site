@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center">
 
               {/* ITEM 1 */}
-              <span className="flex items-center gap-2 bg-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2  font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={LockIcon} className="w-5 h-5" />
                 NO SAAS LOCK-IN
               </span>
@@ -36,16 +36,17 @@ export default function Hero() {
               {/* CONNECTOR */}
               <div className="relative flex items-center justify-center w-[28px] h-[28px] sm:h-[2px] sm:w-[28px]">
 
-                {/* horizontal / vertical line */}
-                <div className="absolute bg-[#22C55E] w-[2px] h-[28px] sm:w-[28px] sm:h-[2px]" />
+                {/* line (behind) */}
+                <div className="absolute z-0 bg-[#EFEFF0] w-[2px] h-[28px] sm:w-[28px] sm:h-[2px]" />
 
-                {/* center ball */}
-                <div className="absolute w-[12px] h-[12px] bg-[#22C55E]/20 rounded-full flex items-center justify-center" />
-                <div className="w-[8px] h-[8px] bg-[#22C55E] rounded-full" />
+                {/* ball (front) */}
+                <div className="absolute z-10 w-[12px] h-[12px] bg-[#22C55E]/20 rounded-full flex items-center justify-center">
+                  <div className="w-[8px] h-[8px] bg-[#22C55E] rounded-full" />
+                </div>
               </div>
 
               {/* ITEM 2 */}
-              <span className="flex items-center gap-2 bg-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={TrophyIcon} className="w-5 h-5" />
                 NO PER-USER PRICING
               </span>
@@ -53,14 +54,17 @@ export default function Hero() {
               {/* CONNECTOR */}
               <div className="relative flex items-center justify-center w-[28px] h-[28px] sm:h-[2px] sm:w-[28px]">
 
-                <div className="absolute bg-[#22C55E] w-[2px] h-[28px] sm:w-[28px] sm:h-[2px]" />
+                {/* line (behind) */}
+                <div className="absolute z-0 bg-[#EFEFF0] w-[2px] h-[28px] sm:w-[28px] sm:h-[2px]" />
 
-                <div className="absolute w-[12px] h-[12px] bg-[#22C55E]/20 rounded-full flex items-center justify-center" />
-                <div className="w-[8px] h-[8px] bg-[#22C55E] rounded-full" />
+                {/* ball (front) */}
+                <div className="absolute z-10 w-[12px] h-[12px] bg-[#22C55E]/20 rounded-full flex items-center justify-center">
+                  <div className="w-[8px] h-[8px] bg-[#22C55E] rounded-full" />
+                </div>
               </div>
 
               {/* ITEM 3 */}
-              <span className="flex items-center gap-2 bg-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={PriceIcon} className="w-5 h-5" />
                 NO COMPROMISE
               </span>
@@ -68,10 +72,11 @@ export default function Hero() {
             </div>
 
 
+
           </div>
 
           <button
-            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] bg-[#504DFF] text-white font-medium text-sm rounded-lg hover:bg-[#7F7CFF] transition-colors"
+            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] bg-[#504DFF] font-jetbrains text-white font-medium text-sm rounded-lg hover:bg-[#7F7CFF] transition-colors"
           >
             BOOK YOUR FREE BI CONSULTATION
 

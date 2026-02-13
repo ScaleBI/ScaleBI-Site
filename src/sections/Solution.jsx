@@ -65,7 +65,7 @@ export default function Solution() {
                 </div>
 
                 {/* Button */}
-                <button className="flex gap-2 bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF]  w-[250px] sm:w-auto border border-[#504DFF] rounded-[12px] py-[10px] px-[16px] justify-center items-center">
+                <button className="flex gap-2 bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF]  w-[250px] sm:w-auto border border-[#504DFF] rounded-[12px] py-[10px] px-[16px] justify-center items-center cursor-pointer">
                     <img src={ArrowIcon} alt="arrow-icon" />
                     <span className="text-[#504DFF] font-jetbrains font-medium text-[16px]">TALK TO OUR EXPERTS</span>
                 </button>

@@ -11,20 +11,20 @@ export default function Navbar() {
     return (
         <>
             <nav className="w-full border-b border-[#EFEFF0] bg-white">
-                <div className="max-w-[1440px] mx-auto h-[70px] flex items-center justify-between px-4 sm:px-6  md:px-10 lg:px-20">
+                <div className="max-w-[1440px] mx-auto h-[70px] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-20">
 
                     {/* Logo */}
                     <div>
                         <img
                             src={NavbarLogo}
                             alt="ScaleBI"
-                            className="h-[40px] w-[121px]"
+                            className="h-[40px] w-[121px] cursor-pointer"
                         />
 
                     </div>
 
                     {/* Menu */}
-                    <ul className="hidden md:flex items-center gap-8 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
+                    <ul className="hidden md:flex items-center gap-4 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
                         <li className="hover:text-[#504DFF] cursor-pointer px-4">Home</li>
                         <li className="hover:text-[#504DFF] cursor-pointer px-4">Why Us</li>
                         <li className="hover:text-[#504DFF] cursor-pointer px-4">Success Stories</li>
@@ -32,9 +32,9 @@ export default function Navbar() {
 
 
                     {/* Contact Button */}
-                    <button className="hidden md:flex items-center justify-center gap-2 font-jetbrains bg-[#504DFF] font-medium text-[16px] text-white min-w-[150px] min-h-[46px] px-4 py-2 rounded-[12px] text-sm hover:bg-[#3d3bdb] transition">
+                    <button className="hidden md:flex items-center justify-center gap-2 font-jetbrains bg-[#504DFF] font-medium text-[16px] text-white min-w-[150px] min-h-[46px] px-4 py-2 rounded-[12px] text-sm hover:bg-[#3d3bdb] transition cursor-pointer">
                         Contact Us
-                        <img src={ContactIcon} alt="Contact Icon" className="w-6 h-6" />
+                        <img src={ContactIcon} alt="Contact Icon" className="w-6 h-6 " />
                     </button>
 
                     <button className="md:hidden" onClick={() => setOpen(true)}>
@@ -79,7 +79,7 @@ export default function Navbar() {
 
                     {/* Contact Button*/}
                     <div className="mt-10 flex justify-center">
-                        <button className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px]">
+                        <button className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px] cursor-pointer">
                             Contact Us
                         </button>
                     </div>

@@ -36,7 +36,7 @@ export default function CaseStudy() {
                         </p>
 
                         <button
-                            className="flex items-center gap-[12px] px-4 py-2 sm:px-6 sm:py-3 border border-[#504DFF] text-[#4F46E5] bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] rounded-[12px] font-medium text-xs sm:text-sm hover:bg-gray-50 transition w-fit"
+                            className="flex items-center gap-[12px] px-4 py-2 sm:px-6 sm:py-3 border border-[#504DFF] text-[#4F46E5] bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] rounded-[12px] font-medium text-xs sm:text-sm hover:bg-gray-50 transition w-fit cursor-pointer"
                         >
                             <img src={FileIcon} alt="file-icon" className="w-4 h-4 sm:w-5 sm:h-5" />
                             READ THE FULL STORY
