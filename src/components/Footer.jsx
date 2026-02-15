@@ -10,43 +10,48 @@ export default function Footer() {
         <section className="w-full overflow-hidden">
 
             {/* TOP CTA */}
-            <div className="w-full bg-gradient-to-r from-[#504DFF] to-[#6C63FF] relative overflow-hidden">
+            <div className="w-full bg-[#504DFF] overflow-hidden ">
 
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-[80px] pt-[80px] sm:pt-[100px] pb-[100px] sm:pb-[120px] relative">
+                <div className="flex flex-col lg:flex-row ">
 
-                    <div className="flex flex-col lg:flex-row items-center justify-between">
+                    {/* LEFT CONTENT */}
 
-                        {/* LEFT CONTENT */}
-                        <div className="flex flex-col gap-8 text-center lg:text-left">
-                            <h2 className="font-urbanist font-semibold text-[28px] sm:text-[32px] lg:text-[40px] text-white">
-                                Let's Build BI That You Own
-                            </h2>
+                    <div className="w-full w-[1280px] text-center lg:text-left flex flex-col gap-8  mt-[40px] lg:py-[80px] lg:pl-[120px] lg:whitespace-nowrap">
+                        <h2 className="font-urbanist font-semibold text-[28px] sm:text-[32px] lg:text-[40px] text-white">
+                            Let's Build BI That You Own
+                        </h2>
 
-                            <p className="font-urbanist font-medium text-[16px] sm:text-[18px] lg:text-[20px] text-white">
-                                Book a free consultation with our BI architects and
-                                start owning your data, not renting it.
-                            </p>
+                        <p className="font-urbanist font-medium text-[16px] sm:text-[18px] lg:text-[20px] text-white">
+                            Book a free consultation with our BI architects and <br />
+                            start owning your data, not renting it.
+                        </p>
 
-                            <button className="flex items-center gap-3 py-3 px-5 bg-gradient-to-b from-white to-[#E0E5FF] text-[#4F46E5] rounded-xl font-jetbrains text-sm font-medium w-fit mx-auto lg:mx-0 hover:opacity-90 transition cursor-pointer">
-                                <img src={ArrowIcon} alt="arrow" className="w-4 h-4" />
-                                REQUEST CONSULTATION
-                            </button>
+                        <button className="flex items-center gap-3 py-3 px-5 bg-gradient-to-b from-white to-[#E0E5FF] text-[#4F46E5] rounded-xl font-jetbrains text-sm font-medium w-fit mx-auto lg:mx-0 hover:opacity-90 transition cursor-pointer">
+                            <img src={ArrowIcon} alt="arrow" className="w-4 h-4" />
+                            REQUEST CONSULTATION
+                        </button>
 
-                            <p className="font-jetbrains text-[14px] sm:text-[16px] lg:text-[18px] uppercase text-white">
-                                NO COMMITMENTS, JUST A 20-MINUTE STRATEGY SESSION WITH OUR BI EXPERTS.
-                            </p>
-                        </div>
+                        <p className="font-jetbrains text-[14px] sm:text-[16px] lg:text-[18px] uppercase text-white">
+                            NO COMMITMENTS, JUST A 20-MINUTE STRATEGY SESSION WITH OUR BI EXPERTS.
+                        </p>
 
                     </div>
 
-                </div>
+                    {/* </div> */}
 
-                {/* IMAGE OUTSIDE CONTAINER */}
-                <img
-                    src={DashBoardImage}
-                    alt="dashboard"
-                    className="hidden lg:block absolute right-0 top-[80px] w-[560px] h-[455px] "
-                />
+
+
+                    {/* IMAGE OUTSIDE CONTAINER */}
+                    <div className="w-full  flex justify-end items-end">
+                        <img
+                            src={DashBoardImage}
+                            alt="dashboard"
+                            className="w-[90%] sm:w-[75%] md:w-[90%] lg:w-[550px]  mt-[40px] sm:mt-[60px] lg:mt-[80px] object-contain
+        "
+                        />
+                    </div>
+
+                </div>
 
             </div>
 
@@ -76,7 +81,7 @@ export default function Footer() {
 
                     </div>
 
-                    <div className="w-full h-[2px] bg-[#2E3038] rounded-[8px]"/>
+                    <div className="w-full h-[2px] bg-[#2E3038] rounded-[8px]" />
 
                     <p className="text-center text-white font-urbanist font-medium text-[14px] sm:text-[16px] lg:text-[18px]">
                         &copy;  2025 ScaleBI is a trademark of its respective owners.
