@@ -5,7 +5,7 @@ export default function TrustedBy() {
 
   return (
     <section className="bg-[#000419] py-12 sm:py-16 lg:py-20">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 text-center">
+      <div className="max-w-[1280px] mx-auto  text-center">
 
         {/* Title */}
         <h2 className="font-urbanist text-[20px] sm:text-[28px] lg:text-[32px] text-[#99A9FF]">
@@ -28,14 +28,16 @@ export default function TrustedBy() {
             className="
               flex items-center gap-[12px]
               px-4 py-2 sm:px-6 sm:py-3
-              border border-[#4F46E5]
+              border border-[#504DFF]
               text-[#4F46E5]
-              bg-white
+              bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF]
+              text-[#504DFF]
               rounded-[12px]
               font-medium
               text-xs sm:text-sm
               hover:bg-gray-50
               transition
+              cursor-pointer
             "
           >
             <img src={FileIcon} alt="file-icon" className="w-4 h-4 sm:w-5 sm:h-5" />

@@ -37,27 +37,14 @@ export default function Problem() {
       >
         {/* HEADER CONTENT */}
         <div
-          className="
-          w-full
-            max-w-[1280px]
-            flex flex-col items-center gap-[24px]
-            px-4
-            sm:px-10
-            lg:px-[160px]
+          className="w-full max-w-[1280px] flex flex-col items-center gap-[24px] px-4 sm:px-10 md:px-[80px] xl:px-[160px]
           "
         >
-          <div className="w-full flex flex-col items-center gap-[16px] text-center">
+          <div className="w-full flex flex-col items-center gap-[16px] text-center ">
             {/* THE PROBLEM BADGE */}
             <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] rounded-[12px] border border-[#EFEFF0]">
               <p
-                className="
-                  flex items-center justify-center
-                  gap-3
-                  px-[12px] py-[8px]
-                  text-[16px]
-                  font-jetbrains font-normal
-                  text-[#5C5F70]
-                "
+                className="flex items-center justify-center gap-3 px-[12px] py-[8px] text-[16px] font-jetbrains font-normal text-[#5C5F70]"
               >
                 <img src={WarningIcon} alt="warning-icon" />
                 THE PROBLEM
@@ -68,7 +55,7 @@ export default function Problem() {
             <p
               className="
                 font-urbanist font-semibold text-[#001066]
-                text-[28px] sm:text-[32px] lg:text-[40px]
+                text-[28px] sm:text-[32px] md:text-[36px] xl:text-[40px]
               "
             >
               <span className="text-[#504DFF]">
@@ -80,12 +67,7 @@ export default function Problem() {
 
           {/* SUBTITLE */}
           <p
-            className="
-              text-[16px] sm:text-[18px] lg:text-[20px]
-              font-medium font-urbanist
-              text-[#5C5F70]
-              text-center
-            "
+            className="text-[16px] sm:text-[18px] lg:text-[20px] font-medium font-urbanist text-[#5C5F70] text-center"
           >
             Most "modern" BI platforms penalize your growth with per-user fees and
             lock your data behind proprietary clouds. Your scaling success
@@ -95,27 +77,12 @@ export default function Problem() {
 
         {/* CARDS */}
         <div
-          className="
-            max-w-[1440px]
-            grid grid-cols-1
-            sm:grid-cols-2
-            lg:grid-cols-3
-            gap-[16px]
-            place-items-center
-          "
+          className="max-w-[1440px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] place-items-center"
         >
           {problems.map((item, index) => (
             <div
               key={index}
-              className="
-                w-full max-w-[416px]
-                h-[377px]
-                flex flex-col gap-[32px]
-                border border-[#E0E5FF]
-                rounded-[16px]
-                bg-[#FAFBFF]
-                px-[24px] pt-[24px]
-              "
+              className="w-full max-w-[416px] h-[377px] flex flex-col gap-[32px] border border-[#E0E5FF] rounded-[16px] bg-[#FAFBFF] px-[24px] pt-[24px]"
             >
               {/* CARD TOP */}
               <div className="flex flex-col gap-[8px] items-center text-center">
