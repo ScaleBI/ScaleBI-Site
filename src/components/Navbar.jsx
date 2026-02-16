@@ -40,7 +40,7 @@ export default function Navbar() {
                         }}>Why Us</li>
                         <li className="px-4">
                             <Link
-                                to="/success-stories"
+                                to="/case-study-index"
                                 className="hover:text-[#504DFF] cursor-pointer"
                             >
                                 Success Stories
@@ -100,7 +100,7 @@ export default function Navbar() {
                             }}>Why Us</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <Link to="/success-stories" className="cursor-pointer">
+                            <Link to="/case-study-index" className="cursor-pointer">
                                 Success Stories
                             </Link>
                         </div>
