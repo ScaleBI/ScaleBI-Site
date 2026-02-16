@@ -66,8 +66,14 @@ export default function Footer() {
 
                         <div className="bg-white py-2 px-6 rounded-xl w-full lg:w-auto">
                             <ul className="flex flex-col lg:flex-row items-center items-center gap-4 py-1 px-4 font-jetbrains uppercase text-[#5C5F70] text-[14px] lg:text-[16px]">
-                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Home</li>
-                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Why Us</li>
+                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={()=>{
+                                 const el = document.getElementById('hero');
+                                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                                }}>Home</li>
+                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={()=>{
+                                     const el = document.getElementById('comparison');
+                                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                                }}>Why Us</li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Success Stories</li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Contact Us</li>
                             </ul>

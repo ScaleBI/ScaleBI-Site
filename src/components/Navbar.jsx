@@ -10,7 +10,7 @@ export default function Navbar() {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <nav className="w-full border-b border-[#EFEFF0] bg-white">
+            <nav className="w-full border-b border-[#EFEFF0] bg-white fixed top-0 left-0 z-50">
                 <div className="max-w-[1440px] mx-auto h-[70px] flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-20">
 
                     {/* Logo */}
@@ -19,14 +19,24 @@ export default function Navbar() {
                             src={NavbarLogo}
                             alt="ScaleBI"
                             className="h-[40px] w-[121px] cursor-pointer"
+                            onClick={()=>{
+                                const el = document.getElementById('hero');
+                                if (el) el.scrollIntoView({behavior: 'smooth'});
+                            }}
                         />
 
                     </div>
 
                     {/* Menu */}
                     <ul className="hidden md:flex items-center gap-4 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4">Home</li>
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4">Why Us</li>
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={()=>{
+                          const el = document.getElementById('hero');
+                            if (el) el.scrollIntoView({ behavior: 'smooth' });
+                        }}>Home</li>
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={()=>{
+                             const el = document.getElementById('comparison');
+                            if (el) el.scrollIntoView({ behavior: 'smooth' });
+                        }}>Why Us</li>
                         <li className="hover:text-[#504DFF] cursor-pointer px-4">Success Stories</li>
                     </ul>
 
@@ -67,13 +77,21 @@ export default function Navbar() {
 
                     <div className="px-6 pt-6 font-jetbrains text-[14px] text-[#5C5F70] flex-1">
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span>Home</span>
+                            <span className="cursor-pointer" onClick={()=>{
+                              setOpen(false);
+                                const el = document.getElementById('hero');
+                                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                            }}>Home</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span>Why Us</span>
+                            <span className="cursor-pointer" onClick={()=>{
+                                setOpen(false);
+                                const el = document.getElementById('comparison');
+                                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                            }}>Why Us</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span>Success Stories</span>
+                            <span className="cursor-pointer">Success Stories</span>
                         </div>
                     </div>
 

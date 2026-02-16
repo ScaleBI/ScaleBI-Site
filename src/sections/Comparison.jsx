@@ -12,7 +12,7 @@ import ExclamationMarkIcon from '../assets/icons/exclamation-mark-icon.svg'
 export default function Comparison() {
 
     return (
-        <section className="w-full bg-[#504DFF] flex justify-center">
+        <section className="w-full bg-[#504DFF] flex justify-center" id="comparison">
             <div className="w-full max-w-[1440px] flex flex-col items-center gap-[64px] px-4 py-12 lg:p-[80px]">
                 <div className=" max-w-[1280px] flex flex-col gap-[24px]  items-center text-center">
                     <div className="flex gap-[8px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] rounded-[16px] px-[12px] py-[8px]">
