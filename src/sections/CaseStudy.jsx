@@ -82,7 +82,7 @@ export default function CaseStudy() {
                                 < div Key={index} className="min-w-full flex flex-col lg:flex-row bg-[#FAFAFA] p-[16px] gap-[16px] rounded-[16px]" >
 
                                     {/* Left Content */}
-                                    < div className="flex flex-col gap-[32px] p-[16px] w-full" >
+                                    <div className="flex flex-col gap-[32px] p-[16px] w-full" >
                                         <h3 className="font-urbanist font-medium text-[20px] text-[#001066]">
                                             {item.title}
                                         </h3>
