@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="w-full max-w-[1280px] px-6 lg:px-[80px] flex flex-col items-center gap-[32px]">
           <div className="w-full max-w-[1120px] flex flex-col items-center text-center gap-[24px]">
 
-            <h1 className="font-urbanist font-semibold text-[32px] sm:text-[48px] lg:text-[80px] leading-[40px] sm:leading-[56px] lg:leading-[88px] text-[#001066]">
+            <h1 className="font-urbanist font-semibold text-[32px] sm:text-[48px]  leading-[40px] sm:leading-[56px] text-[#001066] md:text-[64px] md:leading-[72px] xl:text-[80px] xl:leading-[88px]">
               Take Control of Your <br /> <span className="text-[#504DFF]">Business Intelligence</span>
             </h1>
             <p className="max-w-[1000px] text-[#5C5F70] text-[15px] sm:text-[16px] lg:text-[20px] font-urbanist leading-[26px] sm:leading-[28px]">

@@ -26,7 +26,7 @@ export default function Solution() {
 
     return (
         <section className="w-full bg-[#FFFFFF] flex justify-center">
-            <div className=" w-full max-w-[1440px] flex flex-col items-center p-[40px] sm:p-[80px] gap-[32px] sm:gap-[64px] px-[16px] sm:px-[80px]">
+            <div className=" w-full max-w-[1440px] flex flex-col items-center p-[40px] sm:p-[80px] gap-[32px] sm:gap-[64px] px-[16px] ">
 
                 {/* Header */}
                 <div className="max-w-[1280px] flex flex-col items-center gap-[16px] sm:gap-[24px]">
@@ -35,7 +35,7 @@ export default function Solution() {
                         THE SOLUTION
                     </div>
 
-                    <h1 className="font-urbanist font-semibold text-[28px] sm:text-[40px] text-center text-[#001066]">
+                    <h1 className="font-urbanist font-semibold text-[25px] sm:text-[35px] xl:text-[40px] text-center text-[#001066]">
                         We Make <span className="text-[#504DFF]">Open Source BI</span><br />
                         Enterprise Ready — Built for you, Managed by Us
                     </h1>
@@ -46,13 +46,15 @@ export default function Solution() {
                 </div>
 
                 {/* Solutions Cards */}
-                <div className="w-full flex flex-col sm:flex-row sm:gap-[16px] gap-[16px] items-center justify-center">
-                    {solutions.map((item, index) => (
-                        <div key={index} className="w-full sm:max-w-[416px] flex flex-col gap-[16px] sm:gap-[24px] rounded-[16px] border border-[#E0E5FF] p-[24px] sm:p-[32px] items-center bg-[#FAFBFF]">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] place-items-center
+">
 
-                             <div className="border-2 border-[#E0E5FF] p-[2px] rounded-[32px]">
+                    {solutions.map((item, index) => (
+                        <div key={index} className="w-full max-w-[416px] flex flex-col gap-[16px] sm:gap-[24px] rounded-[16px] border border-[#E0E5FF] p-[24px] sm:p-[32px] items-center bg-[#FAFBFF]">
+
+                            <div className="border-2 border-[#E0E5FF] p-[2px] rounded-[32px]">
                                 <div className="border-2 border-[#99A9FF] p-[2px] rounded-[32px]">
-                            <div className="flex items-center gap-2 px-3 py-1.5 text-xs md:px-4 md:py-2 md:text-sm lg:px-6 lg:py-3 lg:text-base bg-[#504DFF] rounded-[32px] text-white font-medium">
+                                    <div className="flex items-center gap-2 px-3 py-1.5 text-xs md:px-4 md:py-2 md:text-sm lg:px-6 lg:py-3 lg:text-base bg-[#504DFF] rounded-[32px] text-white font-medium">
                                         <img src={item.icon} alt={`${item.title}-icon`} />
                                         <span className="font-urbanist font-semibold text-[20px] sm:text-[24px] text-[#FFFFFF]">{item.title}</span>
                                     </div>
