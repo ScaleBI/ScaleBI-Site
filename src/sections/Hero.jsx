@@ -9,9 +9,9 @@ import StarIcon from "../assets/icons/star-icon.svg";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] flex justify-center ">
-      <div className="w-full max-w-[1440px] flex flex-col items-center py-12 sm:py-16 px-4 sm:px-8 lg:px-20">
-        <div className="w-full max-w-[1280px] px-6 lg:px-[80px] flex flex-col items-center gap-[32px]">
+    <section className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] flex justify-center" id="hero">
+      <div className="w-full max-w-[1440px] flex flex-col items-center py-12 sm:py-16 px-4 sm:px-8 lg:px-20 ">
+        <div className="w-full max-w-[1280px] px-6 lg:px-[80px] flex flex-col items-center gap-[32px] lg:pt-[80px] pt-[50px]">
           <div className="w-full max-w-[1120px] flex flex-col items-center text-center gap-[24px]">
 
             <h1 className="font-urbanist font-semibold text-[32px] sm:text-[48px]  leading-[40px] sm:leading-[56px] text-[#001066] md:text-[64px] md:leading-[72px] xl:text-[80px] xl:leading-[88px]">
