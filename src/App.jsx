@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import SuccessStories from './pages/SuccessStories'
+import ScrollToHash from "./components/ScrollToHash";
+
 
 function App() {
 
@@ -11,6 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
+       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study-index" element={<SuccessStories />} />

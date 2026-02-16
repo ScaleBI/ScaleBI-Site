@@ -30,24 +30,26 @@ export default function Navbar() {
 
                     {/* Menu */}
                     <ul className="hidden md:flex items-center gap-4 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => {
-                            const el = document.getElementById('hero');
-                            if (el) el.scrollIntoView({ behavior: 'smooth' });
-                        }}>Home</li>
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => {
-                            const el = document.getElementById('comparison');
-                            if (el) el.scrollIntoView({ behavior: 'smooth' });
-                        }}>Why Us</li>
                         <li className="px-4">
-                            <Link
-                                to="/case-study-index"
-                                className="hover:text-[#504DFF] cursor-pointer"
-                            >
+                            <Link to="/#hero" className="hover:text-[#504DFF] cursor-pointer">
+                                Home
+                            </Link>
+                        </li>
+
+                        <li className="px-4">
+                            <Link to="/#comparison" className="hover:text-[#504DFF] cursor-pointer">
+                                Why Us
+                            </Link>
+                        </li>
+
+                        <li className="px-4">
+                            <Link to="/case-study-index" className="hover:text-[#504DFF] cursor-pointer">
                                 Success Stories
                             </Link>
                         </li>
 
                     </ul>
+
 
 
                     {/* Contact Button */}
@@ -86,24 +88,24 @@ export default function Navbar() {
 
                     <div className="px-6 pt-6 font-jetbrains text-[14px] text-[#5C5F70] flex-1">
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span className="cursor-pointer" onClick={() => {
-                                setOpen(false);
-                                const el = document.getElementById('hero');
-                                if (el) el.scrollIntoView({ behavior: 'smooth' });
-                            }}>Home</span>
+                            <Link to="/#hero" onClick={() => setOpen(false)}>
+                                Home
+                            </Link>
                         </div>
+
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span className="cursor-pointer" onClick={() => {
-                                setOpen(false);
-                                const el = document.getElementById('comparison');
-                                if (el) el.scrollIntoView({ behavior: 'smooth' });
-                            }}>Why Us</span>
+                            <Link to="/#comparison" onClick={() => setOpen(false)}>
+                                Why Us
+                            </Link>
                         </div>
+
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <Link to="/case-study-index" className="cursor-pointer">
+                            <Link to="/case-study-index" onClick={() => setOpen(false)}>
                                 Success Stories
                             </Link>
                         </div>
+
+
                     </div>
 
                     {/* Contact Button*/}
