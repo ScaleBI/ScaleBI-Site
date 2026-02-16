@@ -1,5 +1,6 @@
 //Navbar.jsx
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import NavbarLogo from '../assets/logos/scaleBI_logo.svg'
 import ContactIcon from '../assets/icons/contact-icon.svg';
 import { Menu, X } from "lucide-react";
@@ -19,9 +20,9 @@ export default function Navbar() {
                             src={NavbarLogo}
                             alt="ScaleBI"
                             className="h-[40px] w-[121px] cursor-pointer"
-                            onClick={()=>{
+                            onClick={() => {
                                 const el = document.getElementById('hero');
-                                if (el) el.scrollIntoView({behavior: 'smooth'});
+                                if (el) el.scrollIntoView({ behavior: 'smooth' });
                             }}
                         />
 
@@ -29,15 +30,23 @@ export default function Navbar() {
 
                     {/* Menu */}
                     <ul className="hidden md:flex items-center gap-4 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={()=>{
-                          const el = document.getElementById('hero');
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => {
+                            const el = document.getElementById('hero');
                             if (el) el.scrollIntoView({ behavior: 'smooth' });
                         }}>Home</li>
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={()=>{
-                             const el = document.getElementById('comparison');
+                        <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => {
+                            const el = document.getElementById('comparison');
                             if (el) el.scrollIntoView({ behavior: 'smooth' });
                         }}>Why Us</li>
-                        <li className="hover:text-[#504DFF] cursor-pointer px-4">Success Stories</li>
+                        <li className="px-4">
+                            <Link
+                                to="/success-stories"
+                                className="hover:text-[#504DFF] cursor-pointer"
+                            >
+                                Success Stories
+                            </Link>
+                        </li>
+
                     </ul>
 
 
@@ -77,21 +86,23 @@ export default function Navbar() {
 
                     <div className="px-6 pt-6 font-jetbrains text-[14px] text-[#5C5F70] flex-1">
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span className="cursor-pointer" onClick={()=>{
-                              setOpen(false);
+                            <span className="cursor-pointer" onClick={() => {
+                                setOpen(false);
                                 const el = document.getElementById('hero');
                                 if (el) el.scrollIntoView({ behavior: 'smooth' });
                             }}>Home</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span className="cursor-pointer" onClick={()=>{
+                            <span className="cursor-pointer" onClick={() => {
                                 setOpen(false);
                                 const el = document.getElementById('comparison');
                                 if (el) el.scrollIntoView({ behavior: 'smooth' });
                             }}>Why Us</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-gray-200 py-4">
-                            <span className="cursor-pointer">Success Stories</span>
+                            <Link to="/success-stories" className="cursor-pointer">
+                                Success Stories
+                            </Link>
                         </div>
                     </div>
 

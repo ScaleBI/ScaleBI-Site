@@ -1,7 +1,9 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Footer from './components/Footer'
+import SuccessStories from './pages/SuccessStories'
 
 function App() {
 
@@ -9,9 +11,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home/>
-      <Footer/>
-  
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/success-stories" element={<SuccessStories />} />
+      </Routes>
+      <Footer />
+
 
 
     </>
