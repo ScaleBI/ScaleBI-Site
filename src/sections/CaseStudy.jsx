@@ -79,7 +79,7 @@ export default function CaseStudy() {
                             [...caseStudies, caseStudies[0]].map((item, index) => (
 
 
-                                < div Key={index} className="min-w-full flex flex-col lg:flex-row bg-[#FAFAFA] p-[16px] gap-[16px] rounded-[16px]" >
+                                < div key={index} className="min-w-full flex flex-col lg:flex-row bg-[#FAFAFA] p-[16px] gap-[16px] rounded-[16px]" >
 
                                     {/* Left Content */}
                                     <div className="flex flex-col gap-[32px] p-[16px] w-full" >
@@ -146,7 +146,7 @@ export default function CaseStudy() {
 
                                     {/* toggle  */}
                                     <div
-                                        className=" flex lg:hidden relative w-[55px] h-[20px] rounded-[16px] border-1 border-[#504DFF] bg-[#F3F4FF] cursor-pointer flex items-center"
+                                        className=" flex lg:hidden relative w-[55px] h-[20px] rounded-[16px] border-1 border-[#504DFF] bg-[#F3F4FF] flex items-center"
                                         onClick={() =>
                                             setActiveIndex((prev) =>
                                                 prev === caseStudies.length - 1 ? 0 : prev + 1

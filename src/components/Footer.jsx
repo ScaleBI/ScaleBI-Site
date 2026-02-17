@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
 import WebsiteLogo from "../assets/logos/website-logo.svg";
 import ArrowIcon from "../assets/icons/arrow-icon.svg";
 import DashBoardImage from "../assets/images/footer-db-image.png";
 import LinkedlnIcon from "../assets/icons/linkedln-icon.svg";
 import TwitterIcon from "../assets/icons/twitter-icon.svg";
 import YoutubeIcon from "../assets/icons/youtube-icon.svg";
+import useScrollNavigation from "../hooks/useScrollNavigation";
 
 export default function Footer() {
+
+      const { goToSection } = useScrollNavigation();
+
     return (
         <section className="w-full overflow-hidden">
 
@@ -66,15 +71,12 @@ export default function Footer() {
 
                         <div className="bg-white py-2 px-6 rounded-xl w-full lg:w-auto">
                             <ul className="flex flex-col lg:flex-row items-center items-center gap-4 py-1 px-4 font-jetbrains uppercase text-[#5C5F70] text-[14px] lg:text-[16px]">
-                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={()=>{
-                                 const el = document.getElementById('hero');
-                                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                                }}>Home</li>
-                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={()=>{
-                                     const el = document.getElementById('comparison');
-                                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                                }}>Why Us</li>
-                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Success Stories</li>
+                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={()=>goToSection('hero')}>Home</li>
+                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={()=>goToSection('comparison')}>Why Us</li>
+                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">
+                                   <Link to="/case-study-index">
+                                   Success Stories
+                                   </Link> </li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Contact Us</li>
                             </ul>
                         </div>
