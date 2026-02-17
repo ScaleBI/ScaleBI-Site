@@ -1,10 +1,30 @@
+import TrophyIcon from '../assets/icons/success-stories/trophy-icon.svg';
+import HRTeamImage from '../assets/images/success-stories/hr-team.png';
+import ManufacturerImage from '../assets/images/success-stories/manufacturer.png';
+
 export default function SuccessStories() {
+    const stories = [
+        {
+            img: HRTeamImage,
+            title: "Leading HR Tech Firm: 80% Faster HR Reporting with ScaleBI",
+            description: "Streamlined HR analytics and gained full BI ownership through smart automation."
+        },
+
+        {
+            img: ManufacturerImage,
+            title: "How a Global Manufacturer Uniified 12 Data Systems, Boosted Efficiency by 25%",
+            description: "From scattered reports to a single dashboard-ScaleBI unified 12 systems seamlessly."
+        }
+        
+        
+
+    ]
     return (
         <section className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#E1FFF7] flex justify-center pt-[80px]" id="comparison" >
             <div className="w-full max-w-[1440px] flex flex-col items-center gap-[64px] px-4 py-12 lg:p-[80px]">
                 <div className=" max-w-[1280px] flex flex-col gap-[24px]  items-center text-center">
                     <div className="flex gap-[8px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] rounded-[16px] px-[12px] py-[8px]">
-                        
+                        <img src={TrophyIcon} alt="trophy-icon" className="w-6 h-6" />
                         <span className="text-[#5C5F70] font-jetbrains font-normal text-[14px] lg:text-[16px]">SUCCESS STORIES</span>
                     </div>
 
@@ -13,6 +33,30 @@ export default function SuccessStories() {
                     <p className="font-urbanist font-medium text-[14px] sm:text-[16px] lg:text-[20px] text-[#5C5F70]">Explore how our team identifies business challenges and applies creative, data-driven solutions for growth.</p>
 
                 </div>
+
+                <div className="w-full max-w-[1280px] grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    {
+                        stories.map((story, index) => (
+                            <div key={index} className="bg-white p-4 rounded-[16px] flex flex-col gap-4 cursor-pointer">
+
+                                <img src={story.img} alt="story-index" />
+
+                                <div className=' flex flex-col gap-3'>
+
+                                    <h3 className="text-[#001066] font-semibold font-urbanist text-[24px]">{story.title}</h3>
+
+                                    <p className="text-[#5C5F70] font-medium font-urbanist text-[18px] max-w-[480px]">{story.description}</p>
+
+
+                                </div>
+
+                            </div>
+                        ))
+                    }
+
+                </div>
+
+
             </div>
         </section>
 
