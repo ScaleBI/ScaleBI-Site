@@ -146,7 +146,7 @@ export default function CaseStudy() {
 
                                     {/* toggle  */}
                                     <div
-                                        className=" flex lg:hidden relative w-[55px] h-[20px] rounded-[16px] border-1 border-[#504DFF] bg-[#F3F4FF] cursor-pointer flex items-center"
+                                        className=" flex lg:hidden relative w-[55px] h-[20px] rounded-[16px] border-1 border-[#504DFF] bg-[#F3F4FF] flex items-center"
                                         onClick={() =>
                                             setActiveIndex((prev) =>
                                                 prev === caseStudies.length - 1 ? 0 : prev + 1
