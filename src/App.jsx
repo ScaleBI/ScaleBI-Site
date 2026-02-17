@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import SuccessStories from './pages/SuccessStories'
 import ScrollToTop from './components/ScrollToTop'
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study-index" element={<SuccessStories />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
       <Footer />
 
