@@ -106,9 +106,9 @@ export default function Navbar() {
 
           {/* Contact Button*/}
           <div className="mt-10 flex justify-center">
-            <button className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px] cursor-pointer">
+            <Link  to="/contact" onClick={() => setOpen(false)} className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px] cursor-pointer flex items-center justify-center">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       )
