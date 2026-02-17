@@ -6,6 +6,7 @@ import PriceIcon from "../assets/icons/price-icon.svg";
 import TrophyIcon from "../assets/icons/trophy-icon.svg";
 import ArrowIcon from "../assets/icons/arrow-icon.svg";
 import StarIcon from "../assets/icons/star-icon.svg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -75,8 +76,11 @@ export default function Hero() {
 
           </div>
 
-          <button
-            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] bg-[#504DFF] font-jetbrains text-white font-medium text-sm rounded-lg hover:bg-[#7F7CFF] transition-colors"
+          <Link
+            to="/contact"
+            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] 
+             bg-[#504DFF] font-jetbrains text-white font-medium text-sm 
+             rounded-lg hover:bg-[#7F7CFF] transition-colors cursor-pointer"
           >
             BOOK YOUR FREE BI CONSULTATION
 
@@ -88,7 +92,7 @@ export default function Hero() {
                 className="w-[17px] h-[17px]"
               />
             </span>
-          </button>
+          </Link>
 
 
 

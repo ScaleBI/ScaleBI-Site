@@ -49,7 +49,9 @@ export default function Navbar() {
 
           {/* Contact Button */}
           <button className="hidden md:flex items-center justify-center gap-2 font-jetbrains bg-[#504DFF] font-medium text-[16px] text-white min-w-[150px] min-h-[46px] px-4 py-2 rounded-[12px] text-sm hover:bg-[#3d3bdb] transition cursor-pointer">
+            <Link to="/contact">
             Contact Us
+            </Link>
             <img src={ContactIcon} alt="Contact Icon" className="w-6 h-6 " />
           </button>
 
@@ -104,9 +106,9 @@ export default function Navbar() {
 
           {/* Contact Button*/}
           <div className="mt-10 flex justify-center">
-            <button className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px] cursor-pointer">
+            <Link  to="/contact" onClick={() => setOpen(false)} className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px] cursor-pointer flex items-center justify-center">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       )

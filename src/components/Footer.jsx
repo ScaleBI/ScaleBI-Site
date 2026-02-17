@@ -37,10 +37,10 @@ export default function Footer() {
                                 start owning your data, not renting it.
                             </p>
 
-                            <button className="flex items-center gap-3 py-3 px-5 bg-gradient-to-b from-white to-[#E0E5FF] text-[#4F46E5] rounded-xl font-jetbrains text-sm font-medium w-fit mx-auto xl:mx-0 hover:opacity-90 transition cursor-pointer">
+                            <Link to="/contact" className="flex items-center gap-3 py-3 px-5 bg-gradient-to-b from-white to-[#E0E5FF] text-[#4F46E5] rounded-xl font-jetbrains text-sm font-medium w-fit mx-auto xl:mx-0 hover:opacity-90 transition cursor-pointer relative z-50">
                                 <img src={ArrowIcon} alt="arrow" className="w-4 h-4" />
                                 REQUEST CONSULTATION
-                            </button>
+                            </Link>
 
                             <p className="font-jetbrains text-[14px] sm:text-[16px] lg:text-[18px] uppercase text-white">
                                 NO COMMITMENTS, JUST A 20-MINUTE STRATEGY SESSION WITH OUR BI EXPERTS.
@@ -86,7 +86,11 @@ export default function Footer() {
                                     <Link to="/case-study-index">
                                         Success Stories
                                     </Link> </li>
-                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">Contact Us</li>
+                                <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">
+                                    <Link to="/contact">
+                                        Contact Us
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
