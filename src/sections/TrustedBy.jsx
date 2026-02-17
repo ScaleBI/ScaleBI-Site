@@ -14,9 +14,9 @@ export default function TrustedBy() {
 
         {/* Logos */}
         <div className="mt-8 sm:mt-12 lg:mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-[40px] opacity-50">
-          {trustedCompanyLogo.map((id) => (
+          {trustedCompanyLogo.map((company) => (
             <div
-              key={id}
+              key={company.id}
               className="h-[60px] sm:h-[70px] lg:h-[80px] bg-[#141B3D] rounded-[8px]"
             />
           ))}

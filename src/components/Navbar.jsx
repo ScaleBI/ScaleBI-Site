@@ -1,9 +1,11 @@
 //Navbar.jsx
 import { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavbarLogo from '../assets/logos/scaleBI_logo.svg'
 import ContactIcon from '../assets/icons/contact-icon.svg';
 import { Menu, X } from "lucide-react";
+import useScrollNavigation from "../hooks/useScrollNavigation";
+
 
 
 
@@ -11,24 +13,7 @@ export default function Navbar() {
 
   const [open, setOpen] = useState(false)
 
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const goToSection = (id) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    } else {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-
-    setOpen(false);
-  };
-
+  const { goToSection } = useScrollNavigation();
 
   return (
     <>
@@ -41,24 +26,15 @@ export default function Navbar() {
               src={NavbarLogo}
               alt="ScaleBI"
               className="h-[40px] w-[121px] cursor-pointer"
-              onClick={() => {
-                const el = document.getElementById('hero');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => goToSection('hero')}
             />
 
           </div>
 
           {/* Menu */}
           <ul className="hidden md:flex items-center gap-4 font-jetbrains font-medium text-[16px] uppercase text-[#5C5F70]">
-            <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => {
-              const el = document.getElementById('hero');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            }}>Home</li>
-            <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => {
-              const el = document.getElementById('comparison');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            }}>Why Us</li>
+            <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() =>goToSection('hero')}>Home</li>
+            <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => goToSection('comparison')}>Why Us</li>
             <li className="px-4">
               <Link
                 to="/case-study-index"
@@ -95,6 +71,7 @@ export default function Navbar() {
               src={NavbarLogo}
               alt="ScaleBI"
               className="h-[40px]"
+              onClick={()=> goToSection('hero')}
             />
 
             <button onClick={() => setOpen(false)}>
@@ -109,19 +86,17 @@ export default function Navbar() {
             <div className="flex justify-between items-center border-b border-gray-200 py-4">
               <span className="cursor-pointer" onClick={() => {
                 setOpen(false);
-                const el = document.getElementById('hero');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                goToSection('hero')
               }}>Home</span>
             </div>
             <div className="flex justify-between items-center border-b border-gray-200 py-4">
               <span className="cursor-pointer" onClick={() => {
                 setOpen(false);
-                const el = document.getElementById('comparison');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                goToSection('comparison')
               }}>Why Us</span>
             </div>
             <div className="flex justify-between items-center border-b border-gray-200 py-4">
-              <Link to="/case-study-index" className="cursor-pointer">
+              <Link to="/case-study-index" className="cursor-pointer" onClick={() => setOpen(false)}>
                 Success Stories
               </Link>
             </div>
