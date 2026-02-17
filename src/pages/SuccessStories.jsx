@@ -37,7 +37,7 @@ export default function SuccessStories() {
                 <div className="w-full max-w-[1280px] grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {
                         stories.map((story, index) => (
-                            <div key={index} className="bg-white p-4 rounded-[16px] flex flex-col gap-4 cursor-pointer">
+                            <div key={index} className="bg-[#FAFBFF] p-4 rounded-[16px] flex flex-col gap-4 cursor-pointer border border-[#E0E5FF]">
 
                                 <img src={story.img} alt="story-index" />
 
