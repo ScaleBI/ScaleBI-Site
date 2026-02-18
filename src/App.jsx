@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import SuccessStories from './pages/SuccessStories'
 import ScrollToTop from './components/ScrollToTop'
 import Contact from './pages/Contact'
+import CaseStudyDetail from './pages/CaseStudyDetail'
+
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study-index" element={<SuccessStories />} />
+          <Route path="/case-study-index/:slug" element={<CaseStudyDetail />} />
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
