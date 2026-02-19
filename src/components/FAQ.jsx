@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ArrowDown from "../assets/icons/arrowDown-icon.svg";
-import ArrowUp from "../assets/icons/arrowUp-icon.svg";
-import QuestionIcon from '../assets/icons/question-icon.svg';
+import ArrowDown from "../assets/icons/landing-page/arrowDown-icon.svg";
+import ArrowUp from "../assets/icons/landing-page/arrowUp-icon.svg";
+import QuestionIcon from '../assets/icons/landing-page/question-icon.svg';
 
 
 export default function FAQ() {

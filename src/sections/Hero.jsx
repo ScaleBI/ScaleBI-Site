@@ -1,11 +1,11 @@
 // Hero.jsx
 import React from "react";
 import heroDashboard from "../assets/images/hero-dashboard.png";
-import LockIcon from "../assets/icons/lock-icon.svg";
-import PriceIcon from "../assets/icons/price-icon.svg";
-import TrophyIcon from "../assets/icons/trophy-icon.svg";
-import ArrowIcon from "../assets/icons/arrow-icon.svg";
-import StarIcon from "../assets/icons/star-icon.svg";
+import LockIcon from "../assets/icons/landing-page/lock-icon.svg";
+import PriceIcon from "../assets/icons/landing-page/price-icon.svg";
+import TrophyIcon from "../assets/icons/landing-page/trophy-icon.svg";
+import ArrowIcon from "../assets/icons/landing-page/arrow-icon.svg";
+import StarIcon from "../assets/icons/landing-page/star-icon.svg";
 import { Link } from "react-router-dom";
 
 export default function Hero() {

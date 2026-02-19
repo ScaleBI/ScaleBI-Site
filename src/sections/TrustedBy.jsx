@@ -1,4 +1,4 @@
-import FileIcon from "../assets/icons/file-icon.svg";
+import FileIcon from "../assets/icons/landing-page/file-icon.svg";
 
 export default function TrustedBy() {
   const trustedCompanyLogo = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];

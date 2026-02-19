@@ -1,14 +1,18 @@
-import StudyIcon from '../assets/icons/study-icon.svg';
-import FileIcon from '../assets/icons/file-icon.svg';
-import ToggleIcon from '../assets/icons/toggle-icon.svg';
-import SwitchIcon from '../assets/icons/switch-icon.svg';
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { Key } from 'lucide-react';
 
+import StudyIcon from '../assets/icons/landing-page/study-icon.svg';
+import FileIcon from '../assets/icons/landing-page/file-icon.svg';
+import SwitchIcon from '../assets/icons/landing-page/switch-icon.svg';
+
 export default function CaseStudy() {
+
+    const navigate = useNavigate();
 
     const caseStudies = [
         {
+            slug: "hr-tech-analytics",
             title: "Leading HR Tech Company Cut 80% of Manual Reporting Effort.",
             description: "Replaced spreadsheets with a fully managed Apache Superset stack - automating 70+ HR reports in under 3 months.",
             testimonial: "With ScaleBI, we finally own our analytics solution and still get enterprise support.",
@@ -92,6 +96,13 @@ export default function CaseStudy() {
                                         </p>
 
                                         <button
+                                            onClick={() => {
+                                                if (item.slug) {
+                                                    navigate(`/${item.slug}`);
+  
+                                                }
+                                                
+                                            }}
                                             className="flex items-center gap-[12px] px-4 py-2 sm:px-6 sm:py-3 border border-[#504DFF] text-[#4F46E5] bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] rounded-[12px] font-medium text-xs sm:text-sm hover:bg-gray-50 transition w-fit cursor-pointer"
                                         >
                                             <img src={FileIcon} alt="file-icon" className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -103,11 +114,6 @@ export default function CaseStudy() {
 
                                         <div
                                             className="hidden lg:flex relative w-[55px] h-[20px] rounded-[16px] border-1 border-[#504DFF] bg-[#F3F4FF] cursor-pointer flex items-center"
-                                            onClick={() =>
-                                                setActiveIndex((prev) =>
-                                                    prev === caseStudies.length - 1 ? 0 : prev + 1
-                                                )
-                                            }
                                         >
                                             {/* Active pill */}
                                             <div
@@ -142,7 +148,7 @@ export default function CaseStudy() {
                                             {item.author}
                                         </p>
                                     </div>
-                                    
+
 
                                     {/* toggle  */}
                                     <div
