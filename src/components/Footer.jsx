@@ -67,40 +67,63 @@ export default function Footer() {
 
             </div>
 
-
-
             {/* BOTTOM DARK SECTION */}
             <div className="w-full bg-[#000419]">
 
                 <div className="flex flex-col gap-[48px] sm:gap-[64px] max-w-[1440px] mx-auto px-6 lg:px-[80px] pt-[60px] sm:pt-[80px] pb-[40px]">
+                    <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6">
 
-                    <div className="flex flex-col xl:flex-row items-center justify-between gap-6">
+                        {/* Top Row → Logo + LinkedIn (mobile) */}
+                        <div className="flex justify-between items-center w-full xl:w-auto">
+                            <img src={WebsiteLogo} alt="logo" className="h-8" />
 
-                        <img src={WebsiteLogo} alt="logo" className="h-8" />
+                            {/* Hide in laptop main row (because laptop already separate position) */}
+                            <div className="xl:hidden">
+                                <a
+                                    href="https://www.linkedin.com/company/108485945/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        src={LinkedlnIcon}
+                                        alt="linkedin"
+                                        className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer"
+                                    />
+                                </a>
+                            </div>
+                        </div>
 
+                        {/* Menu */}
                         <div className="bg-white py-2 px-6 rounded-xl w-full xl:w-auto">
-                            <ul className="flex flex-col xl:flex-row items-center items-center gap-4 py-1 px-4 font-jetbrains uppercase text-[#5C5F70] text-[14px] lg:text-[16px]">
+                            <ul className="flex flex-col xl:flex-row items-center gap-4 py-1 px-4 font-jetbrains uppercase text-[#5C5F70] text-[14px] lg:text-[16px]">
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={() => goToSection('hero')}>Home</li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={() => goToSection('comparison')}>Why Us</li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">
-                                    <Link to="/case-study-index">
-                                        Success Stories
-                                    </Link> </li>
+                                    <Link to="/case-study-index">Success Stories</Link>
+                                </li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">
-                                    <Link to="/contact">
-                                        Contact Us
-                                    </Link>
+                                    <Link to="/contact">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="flex gap-6 justify-center lg:justify-end ">
-                            <a href="https://www.linkedin.com/company/108485945/" target="_blank" rel="noopener noreferrer"><img src={LinkedlnIcon} alt="linkedin" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /></a>
-                            {/* <img src={TwitterIcon} alt="twitter" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
-                            <img src={YoutubeIcon} alt="youtube" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /> */}
+                        {/* LinkedIn for Laptop */}
+                        <div className="hidden xl:flex gap-6">
+                            <a
+                                href="https://www.linkedin.com/company/108485945/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src={LinkedlnIcon}
+                                    alt="linkedin"
+                                    className="w-10 h-10 cursor-pointer"
+                                />
+                            </a>
                         </div>
 
                     </div>
+
 
                     <div className="w-full h-[2px] bg-[#2E3038] rounded-[8px]" />
 

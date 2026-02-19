@@ -78,18 +78,18 @@ export default function Hero() {
 
           <Link
             to="/contact"
-            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] 
-             bg-[#504DFF] font-jetbrains text-white font-medium text-sm 
-             rounded-lg hover:bg-[#7F7CFF] transition-colors cursor-pointer"
+            className="flex items-center gap-2 sm:gap-3 py-2 sm:py-4  pr-3 sm:pr-[10px] pl-3 sm:pl-[16px] h-[40px] sm:h-[52px] 
+             bg-[#504DFF] font-jetbrains text-white font-medium text-xs sm:text-sm 
+             rounded-md hover:bg-[#7F7CFF] transition-colors cursor-pointer"
           >
             BOOK YOUR FREE BI CONSULTATION
 
             {/* Icon box */}
-            <span className="w-[32px] h-[32px] bg-white rounded-lg flex items-center justify-center">
+            <span className="2-[26px] h-[26px] sm:w-[32px] sm:h-[32px] bg-white rounded-md flex items-center justify-center">
               <img
                 src={ArrowIcon}
                 alt="arrow"
-                className="w-[17px] h-[17px]"
+                className="w-[17px] h-[14px] sm:w-[17px] sm:h-[17px]"
               />
             </span>
           </Link>
@@ -106,7 +106,7 @@ export default function Hero() {
 
 
         <div className="mt-12 w-full flex justify-center">
-          <div className=" w-full max-w-[1440px] rounded-[34px] overflow-visible sm:overflow-hidden"
+          <div className=" w-full max-w-[1440px] bg-white rounded-[34px] overflow-visible sm:overflow-hidden"
           >
             <img
               src={heroDashboard}
