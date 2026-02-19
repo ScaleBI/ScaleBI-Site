@@ -106,7 +106,7 @@ export default function Hero() {
 
 
         <div className="mt-12 w-full flex justify-center">
-          <div className=" w-full max-w-[1440px] bg-white rounded-[34px] overflow-visible sm:overflow-hidden"
+          <div className=" w-full max-w-[1440px] rounded-[34px] overflow-visible sm:overflow-hidden"
           >
             <img
               src={heroDashboard}
