@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarLogo from '../assets/logos/scaleBI_logo.svg'
-import ContactIcon from '../assets/icons/contact-icon.svg';
+import ContactIcon from '../assets/icons/landing-page/contact-icon.svg';
 import { Menu, X } from "lucide-react";
 import useScrollNavigation from "../hooks/useScrollNavigation";
 

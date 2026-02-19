@@ -1,33 +1,36 @@
 import HeroImage from "../assets/images/success-stories/hr-team.png";
-import EmployeesIcon from "../assets/icons/success-stories/employees-icon.svg";
-import IndustryIcon from "../assets/icons/success-stories/industry-icon.svg";
-import UserRoleIcon from "../assets/icons/success-stories/userRole-icon.svg";
+import EmployeesIcon from "../assets/icons/success-stories/hr-analytics/employees-icon.svg";
+import IndustryIcon from "../assets/icons/success-stories/hr-analytics/industry-icon.svg";
+import UserRoleIcon from "../assets/icons/success-stories/hr-analytics/userRole-icon.svg";
 
 import ChallengeImage from "../assets/images/success-stories/challenge-img.png";
+
+import CloudIcon from "../assets/icons/success-stories/hr-analytics/cloud-icon.svg";
+import EmailIcon from "../assets/icons/success-stories/hr-analytics/email-icon.svg";
+import LicenseIcon from "../assets/icons/success-stories/hr-analytics/license-icon.svg";
+import ComplianceIcon from "../assets/icons/success-stories/hr-analytics/compliance-icon.svg";
+
 import SolutionImage from "../assets/images/success-stories/solution-img.png";
+import FolderIcon from "../assets/icons/success-stories/hr-analytics/folder-icon.svg";
+import LayoutIcon from "../assets/icons/success-stories/hr-analytics/layout-icon.svg";
+import AnalyticsIcon from "../assets/icons/success-stories/hr-analytics/analytics-icon.svg";
 
+import WarningIcon from "../assets/icons/success-stories/hr-analytics/warning-icon.svg";
+import SuccessIcon from "../assets/icons/success-stories/hr-analytics/success-icon.svg";
 
-import CloudIcon from "../assets/icons/success-stories/cloud-icon.svg";
-import EmailIcon from "../assets/icons/success-stories/email-icon.svg";
-import LicenseIcon from "../assets/icons/success-stories/license-icon.svg";
-import ComplianceIcon from "../assets/icons/success-stories/compliance-icon.svg";
 
 import TakeawayImage from "../assets/images/success-stories/takeaway-img.png";
+import UserIcon from "../assets/icons/success-stories/hr-analytics/user-icon.svg";
+import SpeedIcon from "../assets/icons/success-stories/hr-analytics/speed-icon.svg";
+import ScaleIcon from "../assets/icons/success-stories/hr-analytics/scale-icon.svg";
+import SupportIcon from "../assets/icons/success-stories/hr-analytics/support-icon.svg";
+import QuotesIcon from "../assets/icons/success-stories/hr-analytics/quotes-icon.svg";
 
-import UserIcon from "../assets/icons/success-stories/user-icon.svg";
-import SpeedIcon from "../assets/icons/success-stories/speed-icon.svg";
-import ScaleIcon from "../assets/icons/success-stories/scale-icon.svg";
-import SupportIcon from "../assets/icons/success-stories/support-icon.svg";
 
 
-import WarningIcon from "../assets/icons/success-stories/warning-icon.svg";
-import SuccessIcon from "../assets/icons/success-stories/success-icon.svg";
 
-import FolderIcon from "../assets/icons/success-stories/folder-icon.svg";
-import LayoutIcon from "../assets/icons/success-stories/layout-icon.svg";
-import AnalyticsIcon from "../assets/icons/success-stories/analytics-icon.svg";
 
-import QuotesIcon from "../assets/icons/success-stories/quotes-icon.svg";
+
 
 const caseStudies = [
     {
@@ -44,7 +47,7 @@ const caseStudies = [
             desc2:
                 "As a result, key HR and compliance decisions were often made with incomplete or delayed information.",
             industry: "Industry - HR Tech Firm",
-            companySize: "Company Size 51 to 200 Employees",
+            companySize: "Company Size - 51 to 200 Employees",
             role: "Role Interviewed - Director",
             image: HeroImage,
 

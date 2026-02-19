@@ -30,7 +30,7 @@ export default function SuccessStories() {
                         <span className="text-[#5C5F70] font-jetbrains font-normal text-[14px] lg:text-[16px]">SUCCESS STORIES</span>
                     </div>
 
-                    <h1 className="text-[#504DFF] text-[26px] sm:text-[32px]  lg:text-[40px] font-urbanist font-semibold">Success <span className="text-[#001066]">Stories</span> </h1>
+                    <h1 className="text-[#504DFF] text-[26px] sm:text-[50px]  lg:text-[80px] font-urbanist font-semibold">Success <span className="text-[#001066]">Stories</span> </h1>
 
                     <p className="font-urbanist font-medium text-[14px] sm:text-[16px] lg:text-[20px] text-[#5C5F70]">Explore how our team identifies business challenges and applies creative, data-driven solutions for growth.</p>
 

@@ -14,7 +14,6 @@ export default function CaseStudyDetail() {
     (item) => item.slug === slug
   );
 
-  if (!caseStudy) return <div>Not Found</div>;
 
   return (
     <>

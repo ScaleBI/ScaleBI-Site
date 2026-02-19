@@ -1,7 +1,7 @@
-import TurnArrowIcon from '../assets/icons/turnArrow-icon.svg';
-import SearchIcon from '../assets/icons/search-icon.svg';
-import RocketIcon from '../assets/icons/rocket-icon.svg';
-import PencilIcon from '../assets/icons/pencil-icon.svg';
+import TurnArrowIcon from '../assets/icons/landing-page/turnArrow-icon.svg';
+import SearchIcon from '../assets/icons/landing-page/search-icon.svg';
+import RocketIcon from '../assets/icons/landing-page/rocket-icon.svg';
+import PencilIcon from '../assets/icons/landing-page/pencil-icon.svg';
 
 export default function Steps() {
 

@@ -32,7 +32,7 @@ export default function Hero({ data }) {
           </div>
 
           {/* Company Size + Role */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
+          <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12 xl:gap-26">
 
             <div className="flex items-center gap-4">
               <img src={data.icons.employees} alt="company" className="w-6 h-6 md:w-8 md:h-8" />

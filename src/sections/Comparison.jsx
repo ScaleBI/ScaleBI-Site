@@ -1,11 +1,11 @@
-import TickIcon from '../assets/icons/tick-icon.svg';
-import ScaleBIIcon from '../assets/icons/scaleBI-icon.svg';
-import DollerIcon from '../assets/icons/doller-icon.svg';
-import DisplyIcon from '../assets/icons/disply-icon.svg';
-import ControlIcon from '../assets/icons/control-icon.svg';
-import MenuWIcon from '../assets/icons/menu-w-icon.svg';
-import HealthIcon from '../assets/icons/health-icon.svg';
-import ExclamationMarkIcon from '../assets/icons/exclamation-mark-icon.svg'
+import TickIcon from '../assets/icons/landing-page/tick-icon.svg';
+import ScaleBIIcon from '../assets/icons/landing-page/scaleBI-icon.svg';
+import DollerIcon from '../assets/icons/landing-page/doller-icon.svg';
+import DisplyIcon from '../assets/icons/landing-page/disply-icon.svg';
+import ControlIcon from '../assets/icons/landing-page/control-icon.svg';
+import MenuWIcon from '../assets/icons/landing-page/menu-w-icon.svg';
+import HealthIcon from '../assets/icons/landing-page/health-icon.svg';
+import ExclamationMarkIcon from '../assets/icons/landing-page/exclamation-mark-icon.svg'
 
 
 

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import WebsiteLogo from "../assets/logos/website-logo.svg";
-import ArrowIcon from "../assets/icons/arrow-icon.svg";
+import ArrowIcon from "../assets/icons/landing-page/arrow-icon.svg";
 import DashBoardImage from "../assets/images/footer-db-image.png";
-import LinkedlnIcon from "../assets/icons/linkedln-icon.svg";
-import TwitterIcon from "../assets/icons/twitter-icon.svg";
-import YoutubeIcon from "../assets/icons/youtube-icon.svg";
+import LinkedlnIcon from "../assets/icons/landing-page/linkedln-icon.svg";
+import TwitterIcon from "../assets/icons/landing-page/twitter-icon.svg";
+import YoutubeIcon from "../assets/icons/landing-page/youtube-icon.svg";
 import useScrollNavigation from "../hooks/useScrollNavigation";
 
 export default function Footer() {

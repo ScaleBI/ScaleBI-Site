@@ -1,7 +1,6 @@
-import StudyIcon from '../assets/icons/study-icon.svg';
-import FileIcon from '../assets/icons/file-icon.svg';
-import ToggleIcon from '../assets/icons/toggle-icon.svg';
-import SwitchIcon from '../assets/icons/switch-icon.svg';
+import StudyIcon from '../assets/icons/landing-page/study-icon.svg';
+import FileIcon from '../assets/icons/landing-page/file-icon.svg';
+import SwitchIcon from '../assets/icons/landing-page/switch-icon.svg';
 import { useState, useEffect } from 'react';
 import { Key } from 'lucide-react';
 

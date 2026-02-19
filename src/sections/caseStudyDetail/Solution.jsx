@@ -1,8 +1,3 @@
-// import SolutionImage from "../../assets/images/success-stories/solution-img.png";
-import LayoutIcon from "../../assets/icons/success-stories/layout-icon.svg";
-import FolderIcon from "../../assets/icons/success-stories/folder-icon.svg";
-import AnalyticsIcon from "../../assets/icons/success-stories/analytics-icon.svg";
-
 export default function Solution({ data }) {
 
     if (!data) return null;

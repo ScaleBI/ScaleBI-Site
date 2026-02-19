@@ -1,8 +1,8 @@
-import SolutionIcon from '../assets/icons/solution-icon.svg';
-import OwnItIcon from '../assets/icons/ownIt-icon.svg';
-import RunItIcon from '../assets/icons/runIt-icon.svg';
-import ScaleItIcon from '../assets/icons/scaleIt-icon.svg';
-import ArrowIcon from '../assets/icons/arrow-icon.svg';
+import SolutionIcon from '../assets/icons/landing-page/solution-icon.svg';
+import OwnItIcon from '../assets/icons/landing-page/ownIt-icon.svg';
+import RunItIcon from '../assets/icons/landing-page/runIt-icon.svg';
+import ScaleItIcon from '../assets/icons/landing-page/scaleIt-icon.svg';
+import ArrowIcon from '../assets/icons/landing-page/arrow-icon.svg';
 import { Link } from "react-router-dom";
 
 export default function Solution() {
