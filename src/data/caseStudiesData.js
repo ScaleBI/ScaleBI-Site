@@ -1,4 +1,4 @@
-import HeroImage from "../assets/images/success-stories/hr-team.png";
+import HeroImage from "../assets/images/success-stories/hr-team-detail.png";
 import EmployeesIcon from "../assets/icons/success-stories/hr-analytics/employees-icon.svg";
 import IndustryIcon from "../assets/icons/success-stories/hr-analytics/industry-icon.svg";
 import UserRoleIcon from "../assets/icons/success-stories/hr-analytics/userRole-icon.svg";

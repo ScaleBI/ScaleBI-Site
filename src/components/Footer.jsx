@@ -95,9 +95,9 @@ export default function Footer() {
                         </div>
 
                         <div className="flex gap-6 justify-center lg:justify-end ">
-                            <img src={LinkedlnIcon} alt="linkedin" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
-                            <img src={TwitterIcon} alt="twitter" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
-                            <img src={YoutubeIcon} alt="youtube" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
+                            <a href="https://www.linkedin.com/company/108485945/" target="_blank" rel="noopener noreferrer"><img src={LinkedlnIcon} alt="linkedin" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /></a>
+                            {/* <img src={TwitterIcon} alt="twitter" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
+                            <img src={YoutubeIcon} alt="youtube" className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /> */}
                         </div>
 
                     </div>
