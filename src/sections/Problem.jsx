@@ -1,5 +1,5 @@
-import WarningIcon from '../assets/icons/warning-icon.svg';
-import RedWarningIcon from '../assets/icons/red-warning-icon.svg';
+import WarningIcon from '../assets/icons/landing-page/warning-icon.svg';
+import RedWarningIcon from '../assets/icons/landing-page/red-warning-icon.svg';
 import CostsImage from '../assets/images/costs-image.png';
 import LackImage from '../assets/images/lack-image.png';
 import VendorsImage from '../assets/images/vendors-image.png';

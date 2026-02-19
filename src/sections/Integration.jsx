@@ -1,4 +1,4 @@
-import Menu from '../assets/icons/menu-icon.svg';
+import Menu from '../assets/icons/landing-page/menu-icon.svg';
 import IntegrationImage from '../assets/images/integration-image.png';
 export default function Integration(){
     return(
