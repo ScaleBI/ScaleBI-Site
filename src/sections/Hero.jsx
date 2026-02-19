@@ -80,7 +80,7 @@ export default function Hero() {
             to="/contact"
             className="flex items-center gap-2 sm:gap-3 py-2 sm:py-4  pr-3 sm:pr-[10px] pl-3 sm:pl-[16px] h-[40px] sm:h-[52px] 
              bg-[#504DFF] font-jetbrains text-white font-medium text-xs sm:text-sm 
-             rounded-md hover:bg-[#7F7CFF] transition-colors cursor-pointer"
+             rounded-md hover:bg-[#3d3bdb] transition-colors cursor-pointer"
           >
             BOOK YOUR FREE BI CONSULTATION
 
