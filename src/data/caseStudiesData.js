@@ -28,10 +28,6 @@ import QuotesIcon from "../assets/icons/success-stories/hr-analytics/quotes-icon
 
 
 
-
-
-
-
 const caseStudies = [
     {
         slug: "hr-tech-analytics",
