@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center">
 
               {/* ITEM 1 */}
-              <span className="flex items-center gap-2  font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2  font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={LockIcon} className="w-5 h-5" />
                 NO SAAS LOCK-IN
               </span>
@@ -47,7 +47,7 @@ export default function Hero() {
               </div>
 
               {/* ITEM 2 */}
-              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={TrophyIcon} className="w-5 h-5" />
                 NO PER-USER PRICING
               </span>
@@ -65,7 +65,7 @@ export default function Hero() {
               </div>
 
               {/* ITEM 3 */}
-              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={PriceIcon} className="w-5 h-5" />
                 NO COMPROMISE
               </span>

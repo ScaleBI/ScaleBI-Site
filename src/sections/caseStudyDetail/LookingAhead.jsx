@@ -14,7 +14,7 @@ export default function LookingAhead({ data }) {
               Looking Ahead
             </h2>
 
-            <p className="text-[16px] lg:text-[18px] leading-[160%] text-[#5C5F70] font-urbanist font-medium">
+            <p className="text-[16px] lg:text-[18px] lg:w-[560px] leading-[160%] text-[#5C5F70] font-urbanist font-medium">
               {data.description}
             </p>
           </div>

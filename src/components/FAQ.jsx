@@ -80,7 +80,7 @@ export default function FAQ() {
         <section className="bg-[#E1FFF7] flex justify-center">
             <div className="w-full max-w-[1440px] flex flex-col items-center py-12 px-4 sm:px-8 lg:py-20 lg:px-20  gap-[40px] lg:gap-[64px]">
                 <div className="w-full flex flex-col items-center gap-5 sm:gap-6 text-center">
-                    <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
+                    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
                         <img src={QuestionIcon} alt="study-icon" className="h-6 w-6" />
                         <span className="font-jetbrains font-normal text-[16px] uppercase text-[#5C5F70]">
                             FAQ

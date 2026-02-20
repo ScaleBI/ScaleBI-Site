@@ -140,12 +140,27 @@ const caseStudies = [
                     description:
                         "Built HR dashboards across multiple domains:",
                     bullets: [
-                        "Talent Acquisition: Time-to-hire, open requisitions, candidate pipeline",
-                        "Compliance & Onboarding: Visa, medical, and document tracking",
-                        "Workforce Management: Headcount, attendance, overtime analytics",
-                        "Compensation & Payroll: Earnings, deductions, reconciliation",
-                        "Retention & Learning: Attrition trend and training completion",
-                    ],
+                        {
+                            heading: "Talent Acquisition:",
+                            text: "Time-to-hire, open requisitions, candidate pipeline"
+                        },
+                        {
+                            heading: "Compliance & Onboarding:",
+                            text: "Visa, medical, and document tracking"
+                        },
+                        {
+                            heading: "Workforce Management:",
+                            text: "Headcount, attendance, overtime analytics"
+                        },
+                        {
+                            heading: "Compensation & Payroll:",
+                            text: "Earnings, deductions, reconciliation"
+                        },
+                        {
+                            heading: "Retention & Learning:",
+                            text: "Attrition trend and training completion"
+                        }
+                    ]
                 },
             ],
 
@@ -206,7 +221,7 @@ const caseStudies = [
                     after: "Real-time insights available anytime",
                 },
 
-                
+
             ],
         }
         ,

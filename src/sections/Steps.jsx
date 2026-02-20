@@ -36,7 +36,7 @@ export default function Steps() {
             <div className="w-full max-w-[1440px] flex flex-col items-center gap-12 sm:gap-16 py-12 px-4 sm:px-8 lg:py-20 lg:px-20">
                 <div className="w-full  flex flex-col items-center gap-5 sm:gap-6 text-center ">
 
-                    <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
+                    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
                         <img src={TurnArrowIcon} alt="turn-arrow-icon" />
                         <span className="text-[#5C5F70] font-jetbrains font-normal text-[16px]">STEPS</span>
                     </div>
