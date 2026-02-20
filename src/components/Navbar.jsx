@@ -89,17 +89,17 @@ export default function Navbar() {
               <span className="cursor-pointer" onClick={() => {
                 setOpen(false);
                 goToSection('hero')
-              }}>Home</span>
+              }}>HOME</span>
             </div>
             <div className="flex justify-between items-center border-b border-gray-200 py-4">
               <span className="cursor-pointer" onClick={() => {
                 setOpen(false);
                 goToSection('comparison')
-              }}>Why Us</span>
+              }}>WHY US</span>
             </div>
             <div className="flex justify-between items-center border-b border-gray-200 py-4">
               <Link to="/case-study-index" className="cursor-pointer" onClick={() => setOpen(false)}>
-                Success Stories
+                SUCCESS STORIES
               </Link>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Navbar() {
           {/* Contact Button*/}
           <div className="mt-10 flex justify-center">
             <Link  to="/contact" onClick={() => setOpen(false)} className="w-[180px] bg-[#504DFF] text-white py-2 rounded-full font-medium h-[40px] cursor-pointer flex items-center justify-center">
-              Contact Us
+              CONTACT US
             </Link>
           </div>
         </div>
