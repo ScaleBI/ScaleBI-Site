@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Contact Button */}
           <button className="hidden md:flex items-center justify-center gap-2 font-jetbrains bg-[#504DFF] font-medium text-[16px] text-white min-w-[150px] min-h-[46px] px-4 py-2 rounded-[12px] text-sm hover:bg-[#3d3bdb] transition cursor-pointer">
             <Link to="/contact">
-            Contact Us
+            CONTACT US
             </Link>
             <img src={ContactIcon} alt="Contact Icon" className="w-6 h-6 " />
           </button>

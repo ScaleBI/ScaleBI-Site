@@ -65,11 +65,11 @@ const caseStudies = [
                 },
                 {
                     bold: "Lack of ownership",
-                    text: " and control over analytics stack",
+                    text: " and control over their data and analytics stack",
                 },
                 {
-                    bold: "Manual report creation",
-                    text: " prone to human errors and delays",
+                    bold: "Manual report creation,",
+                    text: " prone to human errors and time delays",
                 },
             ],
             outro:
@@ -101,7 +101,7 @@ const caseStudies = [
                     icon: ComplianceIcon,
                     title: "Data independence and Compliance",
                     description:
-                        "Alignment with long-term vision of data independence and compliance",
+                        "Alignment with their long-term vision of data independence and compliance",
                 },
             ],
         },
@@ -129,7 +129,7 @@ const caseStudies = [
                     icon: LayoutIcon,
                     title: "Data Modeling",
                     bullets: [
-                        "Created centralized datasets: Raw → Cleaned → Augmented → Business Data. Applied validation rules to eliminate duplication and ensure accuracy.",
+                        "Created centralized datasets: Raw → Cleaned → Augmented → Business Data.",
                         "Applied validation rules to eliminate duplication and ensure accuracy.",
                     ],
                 },
@@ -214,7 +214,7 @@ const caseStudies = [
             // title: "Looking Ahead",
 
             description:
-                "HR Tech Firm plans to expand ScaleBI’s coverage to include project tracking and finance, creating an integrated analytics ecosystem.",
+                "HR Tech Firm plans to expand ScaleBI’s coverage to include data from related systems such as project tracking and finance, creating an integrated company-wide analytics ecosystem.",
 
             keyTakeawaysTitle: "Key Takeaways",
 

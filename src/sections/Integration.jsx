@@ -11,7 +11,7 @@ export default function Integration(){
                         <span className="font-jetbrains font-normal text-[16px] text-center uppercase text-[#5C5F70]">INTEGRATIONS</span>
                     </div>
 
-                    <h2 className="font-urbanist font-semibold text-[20px] sm:text-[40px] text-center text-[#001066]">Turn Every data Source You Use into  <br /><span className="text-[#504DFF]">Real-Time Intelligence</span></h2>
+                    <h2 className="font-urbanist font-semibold text-[20px] sm:text-[40px] text-center text-[#001066]">Turn Every Data Source You <br /> Use into  <span className="text-[#504DFF]">Real-Time Intelligence</span></h2>
 
                 </div>
 

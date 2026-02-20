@@ -14,7 +14,7 @@ export default function SuccessStories() {
 
         {
             img: ManufacturerImage,
-            title: "How a Global Manufacturer Uniified 12 Data Systems, Boosted Efficiency by 25%",
+            title: "How a Global Manufacturer Unified 12 Data Systems, Boosted Efficiency by 25%",
             description: "From scattered reports to a single dashboard-ScaleBI unified 12 systems seamlessly."
         }
 
@@ -25,7 +25,7 @@ export default function SuccessStories() {
         <section className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#E1FFF7] flex justify-center pt-[80px]" id="comparison" >
             <div className="w-full max-w-[1440px] flex flex-col items-center gap-[64px] px-4 py-12 lg:p-[80px]">
                 <div className=" max-w-[1280px] flex flex-col gap-[24px]  items-center text-center">
-                    <div className="flex gap-[8px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] rounded-[16px] px-[12px] py-[8px]">
+                    <div className="flex gap-[8px] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0]from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] rounded-[16px] px-[12px] py-[8px]">
                         <img src={TrophyIcon} alt="trophy-icon" className="w-6 h-6" />
                         <span className="text-[#5C5F70] font-jetbrains font-normal text-[14px] lg:text-[16px]">SUCCESS STORIES</span>
                     </div>

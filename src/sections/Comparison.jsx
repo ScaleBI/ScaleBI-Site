@@ -109,7 +109,7 @@ export default function Comparison() {
                                 "Deployed inside your own infrastructure",
                                 "100% open-source + customizable stack",
                                 "Integrates with any warehouse or data tool",
-                                "Dedicated, 24x7 Engineering-Led Managed Service"
+                                "Dedicated, 24x7 Engineering-Led Managed Service."
                             ].map((t) => (
                                 <div
                                     key={t}

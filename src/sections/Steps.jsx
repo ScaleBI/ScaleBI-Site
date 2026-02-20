@@ -43,20 +43,20 @@ export default function Steps() {
 
                     <h2 className="text-[#001066] font-urbanist font-semibold text-[24px] sm:text-[34px] lg:text-[40px]"> A Clear <span className="text-[#504DFF]">Path to Owning Your BI</span></h2>
 
-                    <p className="text-[#5C5F70] font-urbanist font-medium text-[14px] sm:text-[18px] ">From discovery to deployment, we handle everything end-to-end.</p>
+                    <p className="text-[#5C5F70] font-urbanist font-medium text-[14px] sm:text-[20px] ">From discovery to deployment, we handle everything end-to-end.</p>
 
                 </div>
 
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     { steps.map((item, index)=>(
                         <div key={index} className="flex flex-col items-center text-center gap-6 border border-[#E0E5FF] rounded-[16px] p-8 bg-[#FAFBFF]">
-                            <span className="text-[#001066] font-jetbrains text-sm">
+                            <span className="text-[#001066] font-jetbrains text-[16px] sm:text-[18px]">
                                 {item.steps}
                             </span>
 
                             <div className="p-[2px] rounded-[32px] border-2 border-[#E0E5FF]">
                                 <div className="p-[2px] rounded-[32px] border-2 border-[#99A9FF]">
-                                    <div className="flex items-center gap-2 px-4 py-2 bg-[#504DFF] rounded-[32px] text-white text-sm font-medium">
+                                    <div className="flex items-center gap-2 px-4 py-2 bg-[#504DFF] rounded-[32px] text-white  text-[16px] sm:text-[20px] font-urbanist font-semibold">
                                         <img src={item.icon} alt="icon" className="w-6 h-6"/>
                                         {item.title}
                                     </div>

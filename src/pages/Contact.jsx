@@ -32,9 +32,9 @@ export default function Contact() {
                 <div className="w-full max-w-[1440px] flex flex-col items-center gap-12 sm:gap-16 py-12 px-4 sm:px-8 lg:py-20 lg:px-20">
                     <div className="w-full  flex flex-col items-center gap-5 sm:gap-6 text-center mt-[90px]">
 
-                        <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
+                        <div className="bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
                             <img src={ContactIcon} alt="contact-icon" />
-                            <span className="text-[#5C5F70] font-jetbrains font-normal text-[16px]">STEPS</span>
+                            <span className="text-[#5C5F70] font-jetbrains font-normal text-[16px]">CONTACT</span>
                         </div>
 
                         <h2 className="text-[#504DFF] font-urbanist font-semibold text-[24px] sm:text-[34px] lg:text-[40px]"> Let's talk </h2>
