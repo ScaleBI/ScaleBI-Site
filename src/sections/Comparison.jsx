@@ -113,7 +113,7 @@ export default function Comparison() {
                             ].map((t) => (
                                 <div
                                     key={t}
-                                    className="h-[75px] lg:h-[93px] flex items-center justify-center border-b last:border-b-0 border-white text-[13px] sm:text-[14px] lg:text-[18px] font-urbanist font-medium text-[#000419] px-[20px] lg:px-[40px]"
+                                    className="h-[75px] lg:h-[93px] flex items-center justify-center border-b last:border-b-0 border-white text-[13px] sm:text-[14px] lg:text-[18px] font-urbanist font-medium text-[#000419] px-[20px] lg:px-0"
                                 >
                                     {t}
                                 </div>

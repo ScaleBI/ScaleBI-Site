@@ -29,10 +29,27 @@ export default function FAQ() {
             question: "Do I need a data team to use ScaleBI?",
             answer: "No. We handle everything from setup to scaling. Even if you’re a lean startup, you’ll get plug-and-play analytics without hiring BI engineers. For mid-size teams, we act as your extended BI department."
         },
-
         {
             question: "What kind of companies benefit most from ScaleBI?",
-            answer: "ScaleBI is perfect for startups and emerging mid-market businesses that want to make data-driven decisions but without the overhead of big-ticket BI tools.Our customers are typically: Startups ready to move beyond spreadsheets. Mid-market companies tired of paying per-user fees. Teams needing secure, compliant analytics in their own cloud. If you want enterprise-grade BI with startup-speed execution, ScaleBI fits right in."
+            answer: (
+                <>
+                    <p className="mb-4">
+                        ScaleBI is perfect for startups and emerging mid-market businesses that want to make data-driven decisions without the overhead of big-ticket BI tools.
+                    </p>
+
+                    <p className="mb-2">Our customers are typically:</p>
+
+                    <ul className="list-disc pl-6 mb-4 space-y-2">
+                        <li>Startups ready to move beyond spreadsheets.</li>
+                        <li>Mid-market companies tired of paying per-user fees.</li>
+                        <li>Teams needing secure, compliant analytics in their own cloud.</li>
+                    </ul>
+
+                    <p>
+                        If you want enterprise-grade BI with startup-speed execution, ScaleBI fits right in.
+                    </p>
+                </>
+            )
         },
 
         {
