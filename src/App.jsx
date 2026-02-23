@@ -15,14 +15,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study-index" element={<SuccessStories />} />
         <Route path="/case-study-index/:slug" element={<CaseStudyDetail />} />
-         <Route path="/:slug" element={<CaseStudyDetail />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
       <Footer />
 
