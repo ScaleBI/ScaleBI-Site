@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import  caseStudies  from "../data/caseStudiesData";
 import Hero from "../sections/caseStudyDetail/Hero";
 import Challenge from "../sections/caseStudyDetail/Challenge";
@@ -13,6 +13,9 @@ export default function CaseStudyDetail() {
   const caseStudy = caseStudies.find(
     (item) => item.slug === slug
   );
+  if (!caseStudy) {
+    return <Navigate to="/" replace />;
+  }
 
 
   return (
