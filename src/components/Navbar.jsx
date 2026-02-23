@@ -37,7 +37,7 @@ export default function Navbar() {
             <li className="hover:text-[#504DFF] cursor-pointer px-4" onClick={() => goToSection('comparison')}>Why Us</li>
             <li className="px-4">
               <Link
-                to="/case-study-index"
+                to="/success-story-index"
                 className="hover:text-[#504DFF] cursor-pointer"
               >
                 Success Stories
@@ -98,7 +98,7 @@ export default function Navbar() {
               }}>WHY US</span>
             </div>
             <div className="flex justify-between items-center border-b border-gray-200 py-4">
-              <Link to="/case-study-index" className="cursor-pointer" onClick={() => setOpen(false)}>
+              <Link to="/success-story-index" className="cursor-pointer" onClick={() => setOpen(false)}>
                 SUCCESS STORIES
               </Link>
             </div>

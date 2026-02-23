@@ -99,7 +99,7 @@ export default function Footer() {
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={() => goToSection('hero')}>Home</li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4" onClick={() => goToSection('comparison')}>Why Us</li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">
-                                    <Link to="/case-study-index">Success Stories</Link>
+                                    <Link to="/success-story-index">Success Stories</Link>
                                 </li>
                                 <li className="hover:text-[#504DFF] cursor-pointer lg:px-4">
                                     <Link to="/contact">Contact Us</Link>
