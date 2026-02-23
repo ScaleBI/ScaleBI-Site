@@ -15,14 +15,14 @@ export default function CaseStudyDetail() {
   );
 
 
-return (
-  <>
-    {caseStudy?.hero && <Hero data={caseStudy.hero} />}
-    {caseStudy?.challenge && <Challenge data={caseStudy.challenge} />}
-    {caseStudy?.whyScaleBI && <WhyScaleBI data={caseStudy.whyScaleBI} />}
-    {caseStudy?.solution && <Solution data={caseStudy.solution} />}
-    {caseStudy?.results && <Results data={caseStudy.results} />}
-    {caseStudy?.lookingAhead && <LookingAhead data={caseStudy.lookingAhead} />}
-  </>
-);
+  return (
+    <>
+      <Hero data={caseStudy.hero} />
+      <Challenge data={caseStudy.challenge} />
+     <WhyScaleBI data={caseStudy.whyScaleBI} />
+       <Solution data={caseStudy.solution} />
+      <Results data={caseStudy.results} />
+     <LookingAhead data={caseStudy.lookingAhead} />
+    </>
+  );
 }
