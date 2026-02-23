@@ -19,7 +19,7 @@ export default function CaseStudy() {
 
     const caseStudies = [
         {
-            slug: "hr-tech-analytics",
+            slug: "case-study/hr-tech-analytics",
             title: "Leading HR Tech Company Cut 80% of Manual Reporting Effort.",
             description: "Replaced spreadsheets with a fully managed Apache Superset stack - automating 70+ HR reports in under 3 months.",
             testimonial: '"With ScaleBI, we finally own our analytics solution and still get enterprise support."',
@@ -124,7 +124,7 @@ export default function CaseStudy() {
                                         <button
                                             onClick={() => {
                                                 if (item.slug) {
-                                                   navigate(`/case-study/${item.slug}`);
+                                                    navigate(`/${item.slug}`);
 
                                                 }
 
