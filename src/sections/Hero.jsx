@@ -1,11 +1,12 @@
 // Hero.jsx
 import React from "react";
 import heroDashboard from "../assets/images/hero-dashboard.png";
-import LockIcon from "../assets/icons/lock-icon.svg";
-import PriceIcon from "../assets/icons/price-icon.svg";
-import TrophyIcon from "../assets/icons/trophy-icon.svg";
-import ArrowIcon from "../assets/icons/arrow-icon.svg";
-import StarIcon from "../assets/icons/star-icon.svg";
+import LockIcon from "../assets/icons/landing-page/lock-icon.svg";
+import PriceIcon from "../assets/icons/landing-page/price-icon.svg";
+import TrophyIcon from "../assets/icons/landing-page/trophy-icon.svg";
+import ArrowIcon from "../assets/icons/landing-page/arrow-icon.svg";
+import StarIcon from "../assets/icons/landing-page/star-icon.svg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center">
 
               {/* ITEM 1 */}
-              <span className="flex items-center gap-2  font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2  font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={LockIcon} className="w-5 h-5" />
                 NO SAAS LOCK-IN
               </span>
@@ -46,7 +47,7 @@ export default function Hero() {
               </div>
 
               {/* ITEM 2 */}
-              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={TrophyIcon} className="w-5 h-5" />
                 NO PER-USER PRICING
               </span>
@@ -64,7 +65,7 @@ export default function Hero() {
               </div>
 
               {/* ITEM 3 */}
-              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
+              <span className="flex items-center gap-2 font-jetbrains text-[#5C5F70] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] px-4 py-2 rounded-[12px] text-sm border border-gray-200">
                 <img src={PriceIcon} className="w-5 h-5" />
                 NO COMPROMISE
               </span>
@@ -75,20 +76,23 @@ export default function Hero() {
 
           </div>
 
-          <button
-            className="flex items-center gap-3 py-4 pr-[10px] pl-[16px] h-[52px] bg-[#504DFF] font-jetbrains text-white font-medium text-sm rounded-lg hover:bg-[#7F7CFF] transition-colors"
+          <Link
+            to="/contact"
+            className="flex items-center gap-2 sm:gap-3 py-2 sm:py-4  pr-3 sm:pr-[10px] pl-3 sm:pl-[16px] h-[40px] sm:h-[52px] 
+             bg-[#504DFF] font-jetbrains text-white font-medium text-xs sm:text-sm 
+             rounded-md hover:bg-[#3d3bdb] transition-colors cursor-pointer"
           >
             BOOK YOUR FREE BI CONSULTATION
 
             {/* Icon box */}
-            <span className="w-[32px] h-[32px] bg-white rounded-lg flex items-center justify-center">
+            <span className="2-[26px] h-[26px] sm:w-[32px] sm:h-[32px] bg-white rounded-md flex items-center justify-center">
               <img
                 src={ArrowIcon}
                 alt="arrow"
-                className="w-[17px] h-[17px]"
+                className="w-[17px] h-[14px] sm:w-[17px] sm:h-[17px]"
               />
             </span>
-          </button>
+          </Link>
 
 
 
@@ -102,7 +106,7 @@ export default function Hero() {
 
 
         <div className="mt-12 w-full flex justify-center">
-          <div className=" w-full max-w-[1440px] bg-white rounded-[34px] overflow-visible sm:overflow-hidden"
+          <div className=" w-full max-w-[1440px] rounded-[34px] overflow-visible sm:overflow-hidden"
           >
             <img
               src={heroDashboard}
@@ -116,8 +120,8 @@ export default function Hero() {
 
 
         <div className="mt-8 w-full flex justify-center px-4 sm:px-6">
-          <div className="inline-flex items-center gap-4 px-4 sm:px-8 lg:px-12 py-3 border border-[#EFEFF0] rounded-[12px] bg-[#EFEFF0] max-w-full text-center">
-            <span className="font-jetbrains font-normal text-[11px] sm:text-[13px] lg:text-[14px] uppercase text-[#001066]">SEE HOW SCALEBI GIVES YOU FULL CONTROLL OVER YOUR DATA IN MINUTES</span>
+          <div className="inline-flex items-center gap-4 px-4 sm:px-8 lg:px-12 py-3 border border-[#EFEFF0] rounded-[12px] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] max-w-full text-center">
+            <span className="font-jetbrains font-normal text-[12px] sm:text-[15px] lg:text-[18px] uppercase text-[#001066]">SEE HOW SCALEBI GIVES YOU FULL CONTROLL OVER YOUR DATA IN MINUTES</span>
           </div>
         </div>
       </div>
