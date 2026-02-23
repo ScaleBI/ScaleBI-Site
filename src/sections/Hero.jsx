@@ -120,7 +120,7 @@ export default function Hero() {
 
 
         <div className="mt-8 w-full flex justify-center px-4 sm:px-6">
-          <div className="inline-flex items-center gap-4 px-4 sm:px-8 lg:px-12 py-3 border border-[#EFEFF0] rounded-[12px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] max-w-full text-center">
+          <div className="inline-flex items-center gap-4 px-4 sm:px-8 lg:px-12 py-3 border border-[#EFEFF0] rounded-[12px] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] max-w-full text-center">
             <span className="font-jetbrains font-normal text-[12px] sm:text-[15px] lg:text-[18px] uppercase text-[#001066]">SEE HOW SCALEBI GIVES YOU FULL CONTROLL OVER YOUR DATA IN MINUTES</span>
           </div>
         </div>
