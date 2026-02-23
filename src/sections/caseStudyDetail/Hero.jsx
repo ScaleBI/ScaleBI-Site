@@ -2,7 +2,7 @@
 export default function Hero({ data }) {
   return (
     <section className="w-full bg-[#EAF6F2] flex justify-center">
-      <div className="w-full max-w-[1440px] px-6 md:px-10 lg:px-[80px] pt-[120px] md:pt-[140px] lg:pt-[160px] pb-[60px] md:pb-[70px] lg:pb-[80px] flex flex-col items-center gap-6">
+      <div className="w-full max-w-[1440px] px-6 md:px-10 lg:px-[80px] pt-[120px] md:pt-[140px] lg:pt-[160px]  flex flex-col items-center gap-6">
 
         {/* Title */}
         <h1 className="font-urbanist text-center text-[24px] sm:text-[28px] md:text-[34px] lg:text-[40px] font-semibold text-[#001066] leading-tight max-w-[900px]">
@@ -52,7 +52,7 @@ export default function Hero({ data }) {
           <img
             src={data.image}
             alt="case-study-hero"
-            className="w-full max-w-[1172px] rounded-[16px] md:rounded-[20px] object-cover"
+            className="w-full max-w-[1172px]"
           />
         </div>
 

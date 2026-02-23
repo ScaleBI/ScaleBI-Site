@@ -42,10 +42,10 @@ export default function Solution({ data }) {
 
 
                     {/* LEFT CONTENT */}
-                    <div className="flex flex-col gap-[30px] md:gap-[40px] w-full lg:w-[55%]">
+                    <div className="flex flex-col gap-[20px] md:gap-[30px] w-full lg:w-[55%]">
 
                         {data.steps.map((step, index) => (
-                            <div key={index} className="flex gap-[16px]">
+                            <div key={index} className="flex gap-[16px] lg:w-[572px]">
 
                                 <img
                                     src={step.icon}
@@ -53,7 +53,7 @@ export default function Solution({ data }) {
                                     className="w-[36px] h-[36px] md:w-[46px] md:h-[46px]"
                                 />
 
-                                <div className="flex flex-col gap-[8px]">
+                                <div className="flex flex-col gap-[15px] sm:gap-[24px]">
                                     <h3 className="text-[18px] md:text-[22px] lg:text-[24px] font-bold text-[#504DFF] font-urbanist">
                                         {step.title}
                                     </h3>
@@ -67,9 +67,24 @@ export default function Solution({ data }) {
 
                                     {/* Bullets if exists */}
                                     {step.bullets && (
-                                        <ul className="list-disc pl-[20px] text-[16px] md:text-[18px] leading-[160%] text-[#5C5F70] font-medium font-urbanist flex flex-col gap-[6px]">
+                                        <ul className="list-disc pl-[20px] text-[16px] md:text-[18px] leading-[160%] font-urbanist flex flex-col ">
                                             {step.bullets.map((bullet, i) => (
-                                                <li key={i}>{bullet}</li>
+                                                <li key={i}>
+                                                    {typeof bullet === "string" ? (
+                                                        <span className="font-medium text-[#5C5F70]">
+                                                            {bullet}
+                                                        </span>
+                                                    ) : (
+                                                        <>
+                                                            <span className="font-semibold text-[#5C5F70]">
+                                                                {bullet.heading}
+                                                            </span>{" "}
+                                                            <span className="font-medium text-[#5C5F70]">
+                                                                {bullet.text}
+                                                            </span>
+                                                        </>
+                                                    )}
+                                                </li>
                                             ))}
                                         </ul>
                                     )}
@@ -87,7 +102,7 @@ export default function Solution({ data }) {
                         <img
                             src={data.image}
                             alt="solution"
-                            className="w-full rounded-[20px] object-cover"
+                            className="w-full lg:h-[677px] rounded-[20px] object-cover"
                         />
                     </div>
 

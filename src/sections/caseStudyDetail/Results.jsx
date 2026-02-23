@@ -3,7 +3,7 @@ export default function Result({ data }) {
   if (!data) return null;
 
   return (
-    <section className="w-full flex justify-center py-[60px] lg:py-[80px] bg-white">
+    <section className="w-full flex justify-center py-[30px] sm:py-[80px] bg-white">
       <div className="w-full max-w-[1280px] px-6 lg:px-0 flex flex-col gap-[40px] lg:gap-[60px]">
 
         {/* Heading */}

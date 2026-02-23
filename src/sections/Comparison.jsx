@@ -15,7 +15,7 @@ export default function Comparison() {
         <section className="w-full bg-[#504DFF] flex justify-center" id="comparison">
             <div className="w-full max-w-[1440px] flex flex-col items-center gap-[64px] px-4 py-12 lg:p-[80px]">
                 <div className=" max-w-[1280px] flex flex-col gap-[24px]  items-center text-center">
-                    <div className="flex gap-[8px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] rounded-[16px] px-[12px] py-[8px]">
+                    <div className="flex gap-[8px] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] rounded-[16px] px-[12px] py-[8px]">
                         <img src={TickIcon} alt="tick-icon" />
                         <span className="text-[#5C5F70] font-jetbrains font-normal text-[14px] lg:text-[16px]">COMPARISON</span>
                     </div>
@@ -109,11 +109,11 @@ export default function Comparison() {
                                 "Deployed inside your own infrastructure",
                                 "100% open-source + customizable stack",
                                 "Integrates with any warehouse or data tool",
-                                "Dedicated, 24x7 Engineering-Led Managed Service"
+                                "Dedicated, 24x7 Engineering-Led Managed Service."
                             ].map((t) => (
                                 <div
                                     key={t}
-                                    className="h-[75px] lg:h-[93px] flex items-center justify-center border-b last:border-b-0 border-white text-[13px] sm:text-[14px] lg:text-[18px] font-urbanist font-medium text-[#000419] px-[20px] lg:px-[40px]"
+                                    className="h-[75px] lg:h-[93px] flex items-center justify-center border-b last:border-b-0 border-white text-[13px] sm:text-[14px] lg:text-[18px] font-urbanist font-medium text-[#000419] px-[20px] lg:px-0"
                                 >
                                     {t}
                                 </div>

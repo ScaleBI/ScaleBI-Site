@@ -31,14 +31,14 @@ export default function Solution() {
 
                 {/* Header */}
                 <div className="max-w-[1280px] flex flex-col items-center gap-[16px] sm:gap-[24px]">
-                    <div className="inline-flex gap-[8px] px-[12px] py-[6px] sm:py-[8px] bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] rounded-[12px] text-sm sm:text-base">
+                    <div className="inline-flex gap-[8px] px-[12px] py-[6px] sm:py-[8px] bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] rounded-[12px] text-sm sm:text-base font-jetbrains font-normal text-[#5C5F70]">
                         <img src={SolutionIcon} alt="solution-icon" />
                         THE SOLUTION
                     </div>
 
                     <h1 className="font-urbanist font-semibold text-[25px] sm:text-[35px] xl:text-[40px] text-center text-[#001066]">
                         We Make <span className="text-[#504DFF]">Open Source BI</span><br />
-                        Enterprise Ready — Built for you, Managed by Us
+                        Enterprise Ready — Built for You, Managed by Us
                     </h1>
 
                     <p className="font-urbanist text-[#5C5F70] font-medium text-[16px] sm:text-[20px] text-center">
@@ -68,7 +68,7 @@ export default function Solution() {
                 </div>
 
                 {/* Button */}
-                <Link  to="/contact" className="flex gap-2 bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF]  w-[250px] sm:w-auto border border-[#504DFF] rounded-[12px] py-[10px] px-[16px] justify-center items-center cursor-pointer">
+                <Link  to="/contact" className="flex gap-2 bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] hover:from-[#EEF2FF] hover:to-[#C7D2FE]  w-[250px] sm:w-auto border border-[#504DFF] rounded-[12px] py-[10px] px-[16px] justify-center items-center cursor-pointer">
                     <img src={ArrowIcon} alt="arrow-icon" />
                     <span className="text-[#504DFF] font-jetbrains font-medium text-[16px]">TALK TO OUR EXPERTS</span>
                 </Link>

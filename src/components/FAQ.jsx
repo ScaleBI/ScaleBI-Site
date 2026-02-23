@@ -29,10 +29,27 @@ export default function FAQ() {
             question: "Do I need a data team to use ScaleBI?",
             answer: "No. We handle everything from setup to scaling. Even if you’re a lean startup, you’ll get plug-and-play analytics without hiring BI engineers. For mid-size teams, we act as your extended BI department."
         },
-
         {
             question: "What kind of companies benefit most from ScaleBI?",
-            answer: "ScaleBI is perfect for startups and emerging mid-market businesses that want to make data-driven decisions but without the overhead of big-ticket BI tools.Our customers are typically: Startups ready to move beyond spreadsheets. Mid-market companies tired of paying per-user fees. Teams needing secure, compliant analytics in their own cloud. If you want enterprise-grade BI with startup-speed execution, ScaleBI fits right in."
+            answer: (
+                <>
+                    <p className="mb-4">
+                        ScaleBI is perfect for startups and emerging mid-market businesses that want to make data-driven decisions without the overhead of big-ticket BI tools.
+                    </p>
+
+                    <p className="mb-2">Our customers are typically:</p>
+
+                    <ul className="list-disc pl-6 mb-4 space-y-2">
+                        <li>Startups ready to move beyond spreadsheets.</li>
+                        <li>Mid-market companies tired of paying per-user fees.</li>
+                        <li>Teams needing secure, compliant analytics in their own cloud.</li>
+                    </ul>
+
+                    <p>
+                        If you want enterprise-grade BI with startup-speed execution, ScaleBI fits right in.
+                    </p>
+                </>
+            )
         },
 
         {
@@ -80,7 +97,7 @@ export default function FAQ() {
         <section className="bg-[#E1FFF7] flex justify-center">
             <div className="w-full max-w-[1440px] flex flex-col items-center py-12 px-4 sm:px-8 lg:py-20 lg:px-20  gap-[40px] lg:gap-[64px]">
                 <div className="w-full flex flex-col items-center gap-5 sm:gap-6 text-center">
-                    <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
+                    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
                         <img src={QuestionIcon} alt="study-icon" className="h-6 w-6" />
                         <span className="font-jetbrains font-normal text-[16px] uppercase text-[#5C5F70]">
                             FAQ

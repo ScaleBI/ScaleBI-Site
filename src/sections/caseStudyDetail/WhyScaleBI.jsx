@@ -2,7 +2,7 @@
 export default function WhyScaleBI({data}) {
 
   return (
-    <section className="w-full flex justify-center py-[60px] md:py-[70px] lg:py-[80px] bg-white">
+    <section className="w-full flex justify-center py-[30px] md:py-[70px] lg:py-[80px] bg-white">
       <div className="w-full max-w-[1283px] px-6 md:px-10 lg:px-0 flex flex-col items-center gap-[30px] md:gap-[40px]">
 
         {/* Heading */}

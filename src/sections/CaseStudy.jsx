@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Key } from 'lucide-react';
 
 import StudyIcon from '../assets/icons/landing-page/study-icon.svg';
@@ -10,48 +10,74 @@ export default function CaseStudy() {
 
     const navigate = useNavigate();
 
+
+
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(true);
+    const isResettingRef = useRef(false);
+
+
     const caseStudies = [
         {
             slug: "hr-tech-analytics",
             title: "Leading HR Tech Company Cut 80% of Manual Reporting Effort.",
             description: "Replaced spreadsheets with a fully managed Apache Superset stack - automating 70+ HR reports in under 3 months.",
-            testimonial: "With ScaleBI, we finally own our analytics solution and still get enterprise support.",
+            testimonial: '"With ScaleBI, we finally own our analytics solution and still get enterprise support."',
             author: "Director. HR Tech Company"
         },
         {
-            title: "FinTech Startup Reduced Dashboard Build Time by 65%.",
+           
+            title: "How a Global Manufacturer Unified 12 Data Systems, Boosted Efficiency by 25%.",
             description:
-                "Built scalable BI infrastructure with role-based dashboards and real-time reporting.",
+                "From scattered reports to a single dashboard - ScaleBI unified 12 systems seamlessly.",
             testimonial:
-                '"ScaleBI transformed our reporting workflow and reduced engineering dependency."',
-            author: "Head of Data. FinTech Startup",
+                '"ScaleBI helped us consolidate complex data environments into one powerful analytics platform."',
+            author: "VP of Operations. Global Manufacturing Company"
         }
     ]
 
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [isTransitioning, setIsTransitioning] = useState();
 
 
     // Always Right → Left only
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveIndex((prev) => prev + 1);
+            setActiveIndex(prev =>
+                prev >= caseStudies.length ? 0 : prev + 1
+            );
         }, 5000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [caseStudies.length]);
 
 
     useEffect(() => {
-        if (activeIndex === caseStudies.length) {
+
+
+        if (activeIndex === caseStudies.length && !isResettingRef.current) {
+
+            isResettingRef.current = true;
+
             setTimeout(() => {
+
                 setIsTransitioning(false);
                 setActiveIndex(0);
-            }, 700); // match transition duration
-        } else {
-            setIsTransitioning(true);
+
+                // setTimeout(() => {
+                //     setIsTransitioning(true);
+                // }, 50);
+
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        setIsTransitioning(true);
+                        isResettingRef.current = false;
+                    });
+                });
+
+            }, 700);
+
         }
-    }, [activeIndex]);
+
+    }, [activeIndex, caseStudies.length]);
 
 
     return (
@@ -59,7 +85,7 @@ export default function CaseStudy() {
             <div className="w-full max-w-[1440px] flex flex-col items-center py-12 px-4 sm:px-8 lg:py-20 lg:px-20 lg:gap-[64px]">
 
                 <div className="w-full flex flex-col items-center gap-5 sm:gap-6 text-center">
-                    <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
+                    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] border border-[#EFEFF0] flex items-center gap-2 rounded-[12px] px-4 py-2">
                         <img src={StudyIcon} alt="study-icon" className="h-6 w-6" />
                         <span className="font-jetbrains font-normal text-[16px] uppercase text-[#5C5F70]">
                             CASE STUDY
@@ -99,11 +125,11 @@ export default function CaseStudy() {
                                             onClick={() => {
                                                 if (item.slug) {
                                                     navigate(`/${item.slug}`);
-  
+
                                                 }
-                                                
+
                                             }}
-                                            className="flex items-center gap-[12px] px-4 py-2 sm:px-6 sm:py-3 border border-[#504DFF] text-[#4F46E5] bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] rounded-[12px] font-medium text-xs sm:text-sm hover:bg-gray-50 transition w-fit cursor-pointer"
+                                            className="flex items-center gap-[12px] px-4 py-2 sm:px-6 sm:py-3 border border-[#504DFF] text-[#4F46E5] bg-gradient-to-b from-[#FFFFFF] to-[#E0E5FF] rounded-[12px] font-medium text-xs sm:text-sm hover:from-[#EEF2FF] hover:to-[#C7D2FE] transition w-fit cursor-pointer"
                                         >
                                             <img src={FileIcon} alt="file-icon" className="w-4 h-4 sm:w-5 sm:h-5" />
                                             READ THE FULL STORY

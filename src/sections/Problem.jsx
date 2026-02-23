@@ -42,7 +42,7 @@ export default function Problem() {
         >
           <div className="w-full flex flex-col items-center gap-[16px] text-center ">
             {/* THE PROBLEM BADGE */}
-            <div className="bg-gradient-to-b from-[#EFEFF0] to-[#FFFFFF] rounded-[12px] border border-[#EFEFF0]">
+            <div className="bg-gradient-to-b from-[#FFFFFF] to-[#EFEFF0] rounded-[12px] border border-[#EFEFF0]">
               <p
                 className="flex items-center justify-center gap-3 px-[12px] py-[8px] text-[16px] font-jetbrains font-normal text-[#5C5F70]"
               >
