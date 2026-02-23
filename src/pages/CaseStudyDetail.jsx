@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import  caseStudies  from "../data/CaseStudiesData";
+import  caseStudies  from "../data/caseStudiesData";
 import Hero from "../sections/caseStudyDetail/Hero";
 import Challenge from "../sections/caseStudyDetail/Challenge";
 import WhyScaleBI from "../sections/caseStudyDetail/WhyScaleBI";
