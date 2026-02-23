@@ -59,7 +59,7 @@ export default function SuccessStories() {
 
                             if (story.slug) {
                                 return (
-                                    <Link key={index} to={`/case-study-index/${story.slug}`} className='cursor-pointer'>
+                                    <Link key={index} to={`/case-study/${story.slug}`} className='cursor-pointer'>
                                         {Card}
 
                                     </Link>

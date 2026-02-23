@@ -8,26 +8,31 @@ import ScrollToTop from './components/ScrollToTop'
 import Contact from './pages/Contact'
 import CaseStudyDetail from './pages/CaseStudyDetail'
 
-
 function App() {
-
-
   return (
     <>
       <Navbar />
-      <ScrollToTop/>
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study-index" element={<SuccessStories />} />
-        <Route path="/case-study-index/:slug" element={<CaseStudyDetail />} />
-         <Route path="/:slug" element={<CaseStudyDetail />} />
+
+        {/* ✅ Fixed routes */}
+        <Route
+          path="/case-study/hr-tech-analytics"
+          element={<CaseStudyDetail slug="hr-tech-analytics" />}
+        />
+
+        <Route
+          path="/case-study/global-manufacturing"
+          element={<CaseStudyDetail slug="global-manufacturing" />}
+        />
+
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
+
       <Footer />
-
-
-
     </>
   )
 }

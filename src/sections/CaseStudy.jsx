@@ -124,7 +124,7 @@ export default function CaseStudy() {
                                         <button
                                             onClick={() => {
                                                 if (item.slug) {
-                                                    navigate(`/${item.slug}`);
+                                                   navigate(`/case-study/${item.slug}`);
 
                                                 }
 
