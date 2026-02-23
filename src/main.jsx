@@ -12,7 +12,7 @@ if (redirect) {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/ScaleBI-Site">
       <App />
     </BrowserRouter>
   </React.StrictMode>
