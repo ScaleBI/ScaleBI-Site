@@ -12,11 +12,11 @@ export default function SuccessStories() {
             description: "Streamlined HR analytics and gained full BI ownership through smart automation."
         },
 
-        {
-            img: ManufacturerImage,
-            title: "How a Global Manufacturer Unified 12 Data Systems, Boosted Efficiency by 25%",
-            description: "From scattered reports to a single dashboard-ScaleBI unified 12 systems seamlessly."
-        }
+        // {
+        //     img: ManufacturerImage,
+        //     title: "How a Global Manufacturer Unified 12 Data Systems, Boosted Efficiency by 25%",
+        //     description: "From scattered reports to a single dashboard-ScaleBI unified 12 systems seamlessly."
+        // }
 
 
 
@@ -36,7 +36,12 @@ export default function SuccessStories() {
 
                 </div>
 
-                <div className="w-full max-w-[1280px] grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div
+                    className={`w-full max-w-[1280px] grid gap-5 justify-items-center ${stories.length === 1
+                            ? "grid-cols-1 place-items-center"
+                            : "grid-cols-1 sm:grid-cols-2"
+                        }`}
+                >
                     {
 
                         stories.map((story, index) => {

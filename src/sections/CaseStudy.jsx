@@ -24,22 +24,25 @@ export default function CaseStudy() {
             description: "Replaced spreadsheets with a fully managed Apache Superset stack - automating 70+ HR reports in under 3 months.",
             testimonial: '"With ScaleBI, we finally own our analytics solution and still get enterprise support."',
             author: "Director. HR Tech Company"
-        },
-        {
-           
-            title: "How a Global Manufacturer Unified 12 Data Systems, Boosted Efficiency by 25%.",
-            description:
-                "From scattered reports to a single dashboard - ScaleBI unified 12 systems seamlessly.",
-            testimonial:
-                '"ScaleBI helped us consolidate complex data environments into one powerful analytics platform."',
-            author: "VP of Operations. Global Manufacturing Company"
         }
+        ,
+        // {
+           
+        //     title: "How a Global Manufacturer Unified 12 Data Systems, Boosted Efficiency by 25%.",
+        //     description:
+        //         "From scattered reports to a single dashboard - ScaleBI unified 12 systems seamlessly.",
+        //     testimonial:
+        //         '"ScaleBI helped us consolidate complex data environments into one powerful analytics platform."',
+        //     author: "VP of Operations. Global Manufacturing Company"
+        // }
     ]
 
 
 
     // Always Right → Left only
     useEffect(() => {
+        if (caseStudies.length <= 1) return;
+        
         const interval = setInterval(() => {
             setActiveIndex(prev =>
                 prev >= caseStudies.length ? 0 : prev + 1
